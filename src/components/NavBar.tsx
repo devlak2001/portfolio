@@ -1,9 +1,21 @@
+import { useEffect, useState } from "react";
 import "../styles/navBar.scss";
 
 export default function NavBar() {
+  const [stick, setStick] = useState(false);
+  useEffect(() => {
+    document.addEventListener("scroll", (event: any) => {
+      const top = window.scrollY;
+      if (top > 20) {
+        setStick(true);
+      } else {
+        setStick(false);
+      }
+    });
+  }, []);
   return (
     <>
-      <nav>
+      <nav className={`${stick ? "stick" : ""}`}>
         <div className="inner">
           <img
             src={process.env.PUBLIC_URL + "assets/images/logo.png"}
@@ -11,10 +23,50 @@ export default function NavBar() {
             className="logo"
           />
           <div className="links">
-            <div className="link">ABOUT ME</div>
-            <div className="link">PROJECTS</div>
-            <div className="link">EXPERIENCE</div>
-            <div className="link">CONTACT</div>
+            <div className="link">
+              <img
+                src={
+                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                }
+                alt=""
+                className="brush"
+              />
+              <span className="inactive">ABOUT ME</span>
+              <span className="active">ABOUT ME</span>
+            </div>
+            <div className="link">
+              <img
+                src={
+                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                }
+                alt=""
+                className="brush"
+              />
+              <span className="inactive">PROJECTS</span>
+              <span className="active">PROJECTS</span>
+            </div>
+            <div className="link">
+              <img
+                src={
+                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                }
+                alt=""
+                className="brush"
+              />
+              <span className="inactive">EXPERIENCE</span>
+              <span className="active">EXPERIENCE</span>
+            </div>
+            <div className="link">
+              <img
+                src={
+                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                }
+                alt=""
+                className="brush"
+              />
+              <span className="inactive">CONTACT</span>
+              <span className="active">CONTACT</span>
+            </div>
           </div>
         </div>
       </nav>

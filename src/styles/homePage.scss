@@ -1,0 +1,207 @@
+header {
+  height: 100vh;
+  position: relative;
+  @media (max-aspect-ratio: 1512 / 982) {
+    height: 64.9vw;
+  }
+  .backgroundPiece1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -50%);
+    mix-blend-mode: color-burn;
+    max-width: 1053px;
+    width: 69vw;
+    height: auto;
+    opacity: 0.35;
+  }
+  .backgroundPiece2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-45%, 12%);
+    max-width: 675px;
+    width: 44.6vw;
+    height: auto;
+  }
+  .leftSide {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-140%, -60%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .brush {
+      position: absolute;
+      z-index: -1;
+      width: 188%;
+      height: auto;
+      left: 0;
+      top: 0;
+      transform: translate(-20%, -12.1%);
+    }
+    h1 {
+      position: relative;
+      font-family: Rustico;
+      font-size: 64px;
+      margin-bottom: 0.54em;
+      font-weight: normal;
+      @media (max-width: 1512px) {
+        font-size: 4.23vw;
+      }
+      .katana {
+        position: absolute;
+        top: 68%;
+        width: 111%;
+        height: auto;
+        left: -6%;
+      }
+    }
+    p {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 0.55em;
+      @media (max-width: 1512px) {
+        font-size: 2.38vw;
+      }
+    }
+    .socials {
+      display: flex;
+      align-items: center;
+      h3 {
+        font-family: Rustico;
+        font-size: 40px;
+        margin-right: 0.375em;
+        position: relative;
+        top: 0.1em;
+        font-weight: normal;
+        @media (max-width: 1512px) {
+          font-size: 2.64vw;
+        }
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        img {
+          height: 32px;
+          width: auto;
+          margin: 0 10px;
+          @media (max-width: 1512px) {
+            height: 2.11vw;
+            margin: 0 0.66vw;
+          }
+        }
+      }
+    }
+  }
+  .rightSide {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-28%, -64%);
+    .keyboardMouse {
+      max-width: 1182px;
+      width: 78.1vw;
+      height: auto;
+    }
+    .monitor {
+      position: absolute;
+      width: 44.3%;
+      height: auto;
+      top: 15%;
+      left: 39.2%;
+    }
+    .speaker {
+      position: absolute;
+      width: 21.9%;
+      height: auto;
+      bottom: 6.8%;
+      right: 8.4%;
+    }
+    .phoneShadow {
+      position: absolute;
+      width: 11%;
+      height: auto;
+      bottom: 35.3%;
+      left: 22.9%;
+      animation: phoneShadowMoving 2.5s ease infinite;
+      @keyframes phoneShadowMoving {
+        0% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(10%) scale(0.9);
+        }
+        100% {
+          transform: translateY(0) scale(1);
+        }
+      }
+    }
+    .phone {
+      position: absolute;
+      width: 13.5%;
+      height: auto;
+      top: 34.6%;
+      left: 19.7%;
+      animation: phoneFloating 2.5s ease infinite;
+      @keyframes phoneFloating {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  .bottomSide {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    .numberWrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin: 0 25px;
+      @media (max-width: 1512px) {
+        margin: 0 1.65vw;
+      }
+      .cloud {
+        max-width: 246px;
+        height: auto;
+        width: 16.2vw;
+      }
+      .number {
+        position: absolute;
+        bottom: 35%;
+        font-size: 96px;
+        font-family: Rustico;
+        text-shadow: -5px -5px 0 white, 5px -5px 0 white, -5px 5px 0 white,
+          5px 5px 0 white;
+        @media (max-width: 1512px) {
+          font-size: 6.34vw;
+        }
+      }
+      .text {
+        text-align: center;
+        position: absolute;
+        font-family: Rustico;
+        font-size: 36px;
+        line-height: 91.9%;
+        bottom: 20%;
+        text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+          2px 2px 0 white;
+        @media (max-width: 1512px) {
+          font-size: 2.38vw;
+        }
+      }
+    }
+  }
+}
