@@ -1,0 +1,28 @@
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .inner {
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+    .logo {
+      height: 75px;
+      width: auto;
+      margin-right: 29px;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      font-family: Rustico;
+      font-size: 24px;
+      .link {
+        position: relative;
+        top: 0.2em;
+        margin: 0 29px;
+      }
+    }
+  }
+}

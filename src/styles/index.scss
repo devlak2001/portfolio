@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Consolas;
+  font-size: 18px;
+}
+
+button {
+  // This removes styles added by default to button elements.
+  // For when something should semantically be a button,
+  // but isn't buttony in appearance.
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none; // Just in case we missed anything.
+}
+
+@font-face {
+  font-family: Rustico;
+  src: url("../../public/assets/fonts/Rustico-Regular.otf");
+}
