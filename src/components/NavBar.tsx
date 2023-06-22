@@ -3,6 +3,7 @@ import "../styles/navBar.scss";
 
 export default function NavBar() {
   const [stick, setStick] = useState(false);
+
   useEffect(() => {
     document.addEventListener("scroll", (event: any) => {
       const top = window.scrollY;
@@ -13,6 +14,7 @@ export default function NavBar() {
       }
     });
   }, []);
+
   return (
     <>
       <nav className={`${stick ? "stick" : ""}`}>
@@ -23,7 +25,15 @@ export default function NavBar() {
             className="logo"
           />
           <div className="links">
-            <div className="link">
+            <div
+              className="link"
+              onClick={() => {
+                document.querySelector(".AboutMe")!.scrollIntoView({
+                  behavior: "smooth",
+                  block: "end",
+                });
+              }}
+            >
               <img
                 src={
                   process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
