@@ -208,6 +208,27 @@ header {
         }
       }
     }
+    video {
+      position: absolute;
+      bottom: 41%;
+      left: 22.3%;
+      width: 8.7%;
+      transform: translateY(0) rotateZ(-10deg);
+      height: 22%;
+      object-fit: cover;
+      animation: phoneVideoFloating 2.5s ease infinite;
+      @keyframes phoneVideoFloating {
+        0% {
+          transform: translateY(0) rotateZ(-10deg);
+        }
+        50% {
+          transform: translateY(8%) rotateZ(-10deg);
+        }
+        100% {
+          transform: translateY(0) rotateZ(-10deg);
+        }
+      }
+    }
     .phone {
       position: absolute;
       width: 13.5%;
@@ -215,12 +236,15 @@ header {
       top: 34.6%;
       left: 19.7%;
       animation: phoneFloating 2.5s ease infinite;
+      &:hover {
+        cursor: pointer;
+      }
       @keyframes phoneFloating {
         0% {
           transform: translateY(0);
         }
         50% {
-          transform: translateY(10%);
+          transform: translateY(7%);
         }
         100% {
           transform: translateY(0);
@@ -297,6 +321,8 @@ header {
           5px 5px 0 white;
         @media (max-width: 1512px) {
           font-size: 6.34vw;
+          text-shadow: -0.33vw -0.33vw 0 white, 0.33vw -0.33vw 0 white,
+            -0.33vw 0.33vw 0 white, 0.33vw 0.33vw 0 white;
         }
       }
       .text {
@@ -310,6 +336,8 @@ header {
           2px 2px 0 white;
         @media (max-width: 1512px) {
           font-size: 2.38vw;
+          text-shadow: -0.13vw -0.13vw 0 white, 0.13vw -0.13vw 0 white,
+            -0.13vw 0.13vw 0 white, 0.13vw 0.13vw 0 white;
         }
       }
     }
