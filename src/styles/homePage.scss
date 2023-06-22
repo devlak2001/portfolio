@@ -9,10 +9,8 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-85%, -50%);
-    mix-blend-mode: color-burn;
-    max-width: 1053px;
-    width: 69vw;
-    height: auto;
+    width: auto;
+    height: 85.25%;
     opacity: 0.35;
   }
   .backgroundPiece2 {
@@ -23,6 +21,16 @@ header {
     max-width: 675px;
     width: 44.6vw;
     height: auto;
+  }
+  .backgroundPiece3 {
+    position: absolute;
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-18%, -40%);
+
+    width: auto;
+    height: 127%;
   }
   .leftSide {
     position: absolute;
@@ -99,11 +107,11 @@ header {
     position: absolute;
     left: 50%;
     top: 50%;
+    height: 91.55%;
     transform: translate(-28%, -64%);
     .keyboardMouse {
-      max-width: 1182px;
-      width: 78.1vw;
-      height: auto;
+      width: auto;
+      height: 100%;
     }
     .monitor {
       position: absolute;
@@ -118,6 +126,68 @@ header {
       height: auto;
       bottom: 6.8%;
       right: 8.4%;
+      transition: transform 0.35s ease;
+      &.on {
+        animation: speakerBounce 1s cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
+      }
+      &:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+      }
+      @keyframes speakerBounce {
+        0% {
+          transform: scale(1, 1);
+        }
+        25% {
+          transform: scale(1.04, 0.98);
+        }
+        50% {
+          transform: scale(0.96, 1.02);
+        }
+        75% {
+          transform: scale(1.04, 0.98);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+    }
+    .speakerWaves {
+      position: absolute;
+      width: 10%;
+      height: auto;
+      bottom: 9%;
+      right: 27%;
+      overflow: visible;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      &.on {
+        opacity: 1;
+      }
+      .first,
+      .second,
+      .third,
+      .fourth {
+        transform-box: fill-box;
+        animation: speakerWaveMoving 0.8s steps(1) infinite;
+      }
+      @keyframes speakerWaveMoving {
+        0% {
+          transform: scaleY(1) translateX(0);
+        }
+        25% {
+          transform: scaleY(1.1) translateX(2%);
+        }
+        50% {
+          transform: scaleY(1) translateX(0);
+        }
+        75% {
+          transform: scaleY(0.9) translateX(-2%);
+        }
+        100% {
+          transform: scaleY(1) translateX(0);
+        }
+      }
     }
     .phoneShadow {
       position: absolute;
@@ -173,10 +243,50 @@ header {
       @media (max-width: 1512px) {
         margin: 0 1.65vw;
       }
+      &:nth-child(2) {
+        .cloud {
+          animation: cloudMoving2 3s linear both infinite;
+        }
+      }
       .cloud {
         max-width: 246px;
         height: auto;
         width: 16.2vw;
+        animation: cloudMoving1 3s linear infinite;
+        @keyframes cloudMoving1 {
+          0% {
+            transform: skew(0, 0) translateY(2%);
+          }
+          25% {
+            transform: skew(1deg, 1deg) translateY(0);
+          }
+          50% {
+            transform: skew(0, 0) translateY(2%);
+          }
+          75% {
+            transform: skew(-1deg, -1deg) translateY(0);
+          }
+          100% {
+            transform: skew(0, 0) translateY(2%);
+          }
+        }
+        @keyframes cloudMoving2 {
+          0% {
+            transform: skew(1deg, 1deg) translateY(0);
+          }
+          25% {
+            transform: skew(0, 0) translateY(2%);
+          }
+          50% {
+            transform: skew(-1deg, -1deg) translateY(0);
+          }
+          75% {
+            transform: skew(0, 0) translateY(2%);
+          }
+          100% {
+            transform: skew(1deg, 1deg) translateY(0);
+          }
+        }
       }
       .number {
         position: absolute;
