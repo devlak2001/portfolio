@@ -18,7 +18,7 @@ export default function NavBar() {
       <nav className={`${stick ? "stick" : ""}`}>
         <div className="inner">
           <img
-            src={process.env.PUBLIC_URL + "assets/images/logo.png"}
+            src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
             alt=""
             className="logo"
           />
@@ -26,7 +26,7 @@ export default function NavBar() {
             <div className="link">
               <img
                 src={
-                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
                 }
                 alt=""
                 className="brush"
@@ -37,7 +37,7 @@ export default function NavBar() {
             <div className="link">
               <img
                 src={
-                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
                 }
                 alt=""
                 className="brush"
@@ -48,7 +48,7 @@ export default function NavBar() {
             <div className="link">
               <img
                 src={
-                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
                 }
                 alt=""
                 className="brush"
@@ -59,7 +59,7 @@ export default function NavBar() {
             <div className="link">
               <img
                 src={
-                  process.env.PUBLIC_URL + "assets/images/NavBar/linkBrush.png"
+                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
                 }
                 alt=""
                 className="brush"
