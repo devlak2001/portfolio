@@ -35,4 +35,148 @@
     z-index: -1;
     mix-blend-mode: color-burn;
   }
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 26.2em;
+    font-size: 18px;
+    @media (max-width: 1512px) {
+      font-size: 1.19vw;
+    }
+    .japaneseSurname,
+    .japaneseName,
+    .joystick,
+    .beer,
+    .popcorn,
+    .textBkg,
+    .signature {
+      position: absolute;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    .signature {
+      width: 34.9em;
+      left: -30.13em;
+      bottom: -15em;
+    }
+    .textBkg {
+      width: 173%;
+      top: -68%;
+      left: -35%;
+    }
+    .joystick {
+      width: 16.8em;
+      left: -10em;
+      top: -11em;
+      opacity: 0.9;
+      animation: joystickFloating 3s ease infinite;
+      @keyframes joystickFloating {
+        0% {
+          transform: translateY(0) rotateZ(0deg);
+        }
+        50% {
+          transform: translateY(5%) rotateZ(2deg);
+        }
+        100% {
+          transform: translateY(0) rotateZ(0deg);
+        }
+      }
+    }
+    .beer {
+      width: 15em;
+      right: -11em;
+      top: -11em;
+      animation: beerFloating 3s ease infinite;
+      @keyframes beerFloating {
+        0% {
+          transform: translateY(5%) rotateZ(0deg);
+        }
+        50% {
+          transform: translateY(0) rotateZ(2deg);
+        }
+        100% {
+          transform: translateY(5%) rotateZ(0deg);
+        }
+      }
+    }
+    .popcorn {
+      width: 14.97em;
+      right: -9em;
+      bottom: -10em;
+      animation: popcornFloating 3s ease infinite;
+      @keyframes popcornFloating {
+        0% {
+          transform: translateY(-5%) rotateZ(2deg);
+        }
+        50% {
+          transform: translateY(0) rotateZ(0);
+        }
+        100% {
+          transform: translateY(-5%) rotateZ(2deg);
+        }
+      }
+    }
+    .japaneseName {
+      width: 13.69em;
+      bottom: calc(100% + 6.6em);
+    }
+    .japaneseSurname {
+      width: 6.88em;
+      bottom: calc(100% + 4.18em);
+    }
+    h2 {
+      font-family: Rustico;
+      font-weight: normal;
+      font-size: 2.66em;
+    }
+    p {
+      font-size: 1em;
+      height: 9.72em;
+      padding: 0 0.8em;
+      overflow-y: scroll;
+      line-height: 120%;
+      position: relative;
+      &::-webkit-scrollbar {
+        width: 5px;
+        overflow: visible;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: black;
+        border-radius: 20px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #f05955;
+        border-radius: 20px;
+      }
+    }
+    button {
+      position: relative;
+      font-family: Rustico;
+      color: #fff;
+      font-size: 1.55em;
+      margin-top: 0.3em;
+      display: flex;
+      justify-content: center;
+      transition: transform 0.35s ease;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      span {
+        position: absolute;
+        top: 20%;
+      }
+      .bkg {
+        width: 8.82em;
+      }
+    }
+  }
 }

@@ -9,8 +9,7 @@ nav {
   justify-content: center;
   z-index: 100;
   background-color: transparent;
-  transition: background-color 0.35s ease, height 0.35s ease,
-    backdrop-filter 0.35s ease;
+  transition: background-color 0.35s ease, height 0.35s ease;
   backdrop-filter: blur(0);
   @media (max-width: 1512px) {
     height: 8.2vw;
