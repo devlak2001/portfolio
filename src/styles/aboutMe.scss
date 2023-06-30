@@ -36,6 +36,7 @@
     mix-blend-mode: color-burn;
   }
   .middle {
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,9 +46,12 @@
     flex-direction: column;
     text-align: center;
     width: 26.2em;
-    font-size: 18px;
-    @media (max-width: 1512px) {
-      font-size: 1.19vw;
+    font-size: 2.1vh;
+    // @media (max-width: 1512px) {
+    //   font-size: 1.32vw;
+    // }
+    @media (max-aspect-ratio: 1512 / 982) {
+      font-size: 1.32vw;
     }
     .japaneseSurname,
     .japaneseName,
@@ -124,11 +128,11 @@
     }
     .japaneseName {
       width: 13.69em;
-      bottom: calc(100% + 6.6em);
+      bottom: calc(100% + 5.6em);
     }
     .japaneseSurname {
       width: 6.88em;
-      bottom: calc(100% + 4.18em);
+      bottom: calc(100% + 3.18em);
     }
     h2 {
       font-family: Rustico;

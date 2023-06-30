@@ -7,6 +7,7 @@
 body {
   font-family: Consolas;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -21,6 +22,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #f05955;
   border-radius: 20px;
+}
+
+#root {
+  overflow: hidden;
 }
 
 .App {
