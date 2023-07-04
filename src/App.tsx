@@ -6,7 +6,8 @@ import "./styles/sakura.scss";
 
 import Sakura from "./scripts/sakura";
 
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
+import ProjectsPage from "./components/ProjectsPage";
 function App() {
   useEffect(() => {
     const sakura = new Sakura(".App");
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <HomePage />
       <AboutMe />
+      <ProjectsPage />
     </div>
   );
 }

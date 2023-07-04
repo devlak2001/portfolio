@@ -31,6 +31,7 @@ body::-webkit-scrollbar-thumb {
 .App {
   background-image: url("./../../public/assets/images/noise.png");
   background-position: center;
+  background-repeat: repeat-x repeat-y;
   overflow: hidden;
 }
 

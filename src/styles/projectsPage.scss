@@ -1,0 +1,7 @@
+.ProjectsPage {
+  height: 100vh;
+  position: relative;
+  @media (max-aspect-ratio: 1512 / 982) {
+    height: 64.9vw;
+  }
+}
