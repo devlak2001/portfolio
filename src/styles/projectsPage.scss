@@ -1,7 +1,141 @@
 .ProjectsPage {
   height: 100vh;
   position: relative;
+  font-size: 2.1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (max-aspect-ratio: 1512 / 982) {
     height: 64.9vw;
+    font-size: 1.32vw;
+  }
+  .backgroundPiece1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-93%, -50%);
+    width: auto;
+    height: 99%;
+    opacity: 0.2;
+    mix-blend-mode: color-burn;
+  }
+  .backgroundPiece2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-24%, -52%);
+    width: auto;
+    height: 135.3%;
+    opacity: 0.6;
+    mix-blend-mode: color-burn;
+  }
+  h2 {
+    font-family: Rustico;
+    font-weight: normal;
+    font-size: 2.66em;
+    margin-bottom: 1.4em;
+  }
+  .project {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    .leftSide {
+      max-width: 18.3em;
+      .brush {
+        position: absolute;
+        width: 24.33em;
+        height: auto;
+        left: -7%;
+        top: -23%;
+      }
+      h3 {
+        position: relative;
+        font-family: Rustico;
+        font-weight: normal;
+        font-size: 1.6em;
+        line-height: 133%;
+        margin-bottom: 0.625em;
+      }
+      p {
+        position: relative;
+        font-size: 1em;
+        max-height: 13.55em;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          width: 5px;
+          overflow: visible;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: black;
+          border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #f05955;
+          border-radius: 20px;
+        }
+      }
+    }
+    .presentation {
+      height: 24em;
+      margin-left: 8em;
+      position: relative;
+      transition: margin-left 0.35s ease;
+      &.firstAssetSelected {
+        margin-left: 4em;
+        .prev {
+          pointer-events: none;
+          opacity: 0;
+        }
+      }
+      &.lastAssetSelected {
+        .next {
+          pointer-events: none;
+          opacity: 0;
+        }
+      }
+      .prev {
+        right: calc(100% + 2em);
+      }
+      .prev,
+      .next {
+        top: 45%;
+        position: absolute;
+        transition: transform 0.35s ease, opacity 0.35s ease;
+        img {
+          width: 4em;
+          height: auto;
+        }
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+      .next {
+        left: 100%;
+      }
+      .contentWrapper {
+        height: calc(100% + 2em);
+        max-width: 28em;
+        gap: 3.62em;
+        display: flex;
+        overflow-x: scroll;
+        padding: 1em;
+        position: relative;
+        top: -1em;
+        left: -1em;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        video {
+          height: 100%;
+          width: auto;
+          box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
   }
 }
