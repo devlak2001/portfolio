@@ -5,28 +5,30 @@ const ImageLoader = () => {
   const [minTimePassed, setMinTimePassed] = useState<boolean>(false);
   const [hideLoader, setHideLoader] = useState<boolean>(false);
   useEffect(() => {
-    const imgElements = document.querySelectorAll("img");
+    const images = Array.from(document.querySelectorAll("img")).map(
+      (img) => (img as HTMLImageElement).src
+    );
 
-    const handleImageLoad = () => {
-      const unloadedImages = Array.from(imgElements).filter(
-        (img) => !img.complete
-      );
-      if (unloadedImages.length === 0) {
-        setAllLoaded(true);
-      }
-    };
-
-    imgElements.forEach((img) => {
-      if (!img.complete) {
-        img.addEventListener("load", handleImageLoad);
-      }
-    });
-
-    return () => {
-      imgElements.forEach((img) => {
-        img.removeEventListener("load", handleImageLoad);
+    const loadImage = (src: string) => {
+      return new Promise<void>((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve();
+        img.onerror = (err) => reject(err);
+        img.src = src;
       });
     };
+
+    const loadAllImages = async () => {
+      try {
+        await Promise.all(images.map((img) => loadImage(img)));
+        // console.log("All images have loaded!");
+        setAllLoaded(true);
+        // Perform your desired action here
+      } catch (err) {
+        console.error("An error occurred while loading the images", err);
+      }
+    };
+    loadAllImages();
   }, [setAllLoaded]);
 
   useEffect(() => {

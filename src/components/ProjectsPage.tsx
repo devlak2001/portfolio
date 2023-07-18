@@ -65,7 +65,6 @@ export default function ProjectsPage() {
     )?.childNodes as NodeListOf<HTMLElement>;
 
     presentationContent.forEach((el: any) => {
-      console.log(el);
       el.style.visibility = "hidden";
       if (el.readyState === 4) {
         el.style.visibility = "visible";
@@ -87,7 +86,6 @@ export default function ProjectsPage() {
       )?.childNodes as NodeListOf<HTMLElement>;
 
       presentationContent.forEach((el: any) => {
-        console.log(el);
         el.style.visibility = "hidden";
         if (el.readyState === 4) {
           el.style.visibility = "visible";
@@ -109,7 +107,6 @@ export default function ProjectsPage() {
     });
   }, []);
 
-  console.log(project);
   return (
     <>
       <section className="ProjectsPage">
