@@ -8,16 +8,19 @@ import Sakura from "./scripts/sakura";
 
 import { useEffect } from "react";
 import ProjectsPage from "./components/ProjectsPage";
+import ImageLoader from "./components/ImageLoader";
 function App() {
   useEffect(() => {
     const sakura = new Sakura(".App");
   }, []);
+
   return (
     <div className="App">
       <NavBar />
       <HomePage />
       <AboutMe />
       <ProjectsPage />
+      <ImageLoader />
     </div>
   );
 }

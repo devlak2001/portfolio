@@ -13,6 +13,12 @@ export default function NavBar() {
         setStick(false);
       }
     });
+
+    if (window.scrollY > 20) {
+      setStick(true);
+    } else {
+      setStick(false);
+    }
   }, []);
 
   return (

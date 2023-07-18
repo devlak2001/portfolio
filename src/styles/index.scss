@@ -51,11 +51,108 @@ button {
 
 img {
   display: block;
+  user-select: none;
+  pointer-events: none;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.ImageLoader1,
+.ImageLoader2 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  font-size: 100px;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  &.loaded {
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  .loader {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite;
+  }
+  .loader::before,
+  .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 0.15em solid white;
+    animation: prixClipFix 2s linear infinite;
+  }
+  .loader::after {
+    border-color: #f05955;
+    animation: prixClipFix 2s linear infinite,
+      rotate 0.5s linear infinite reverse;
+    inset: 0.25em;
+  }
+
+  .loaderText {
+    font-family: ConsolasBold;
+    font-size: 0.7em;
+    margin-top: 0.3em;
+    color: white;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes prixClipFix {
+    0% {
+      clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+    }
+    25% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+    }
+    50% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+    }
+    75% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    }
+    100% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+  }
+}
+
+.ImageLoader2 {
+  background-color: #f05955;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  .loader::before,
+  .loader::after {
+    border: 0.15em solid black;
+  }
+
+  .loaderText {
+    color: black;
+  }
+  &.loaded {
+    transform: translateX(50%);
+  }
 }
 
 @font-face {

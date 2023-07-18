@@ -130,6 +130,7 @@ header {
       bottom: 6.8%;
       right: 8.4%;
       transition: transform 0.35s ease;
+      pointer-events: all;
       &.on {
         animation: speakerBounce 1s cubic-bezier(0.28, 0.84, 0.42, 1) infinite;
       }
