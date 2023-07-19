@@ -51,14 +51,35 @@ export default function AboutMe() {
             className="japaneseSurname"
           />
           <img
+            src={
+              process.env.PUBLIC_URL + "/assets/images/AboutMe/itemShadow.png"
+            }
+            alt=""
+            className="shadow1"
+          />
+          <img
             src={process.env.PUBLIC_URL + "/assets/images/AboutMe/beer.png"}
             alt=""
             className="beer"
           />
           <img
+            src={
+              process.env.PUBLIC_URL + "/assets/images/AboutMe/itemShadow.png"
+            }
+            alt=""
+            className="shadow2"
+          />
+          <img
             src={process.env.PUBLIC_URL + "/assets/images/AboutMe/popcorn.png"}
             alt=""
             className="popcorn"
+          />
+          <img
+            src={
+              process.env.PUBLIC_URL + "/assets/images/AboutMe/itemShadow.png"
+            }
+            alt=""
+            className="shadow3"
           />
           <img
             src={process.env.PUBLIC_URL + "/assets/images/AboutMe/joystick.png"}
@@ -124,7 +145,14 @@ export default function AboutMe() {
             Welcome to my world, where I transform ideas into immersive digital
             masterpieces. Let's create something extraordinary together.
           </p>
-          <button>
+          <button
+            onClick={() => {
+              document.querySelector(".ProjectsPage")!.scrollIntoView({
+                behavior: "smooth",
+                block: "end",
+              });
+            }}
+          >
             <img
               src={
                 process.env.PUBLIC_URL + "/assets/images/AboutMe/buttonBkg.png"

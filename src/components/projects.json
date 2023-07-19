@@ -3,7 +3,11 @@
     {
       "title": "INTEL AR EXPERIENCE FOR MICROSOFT BUILD EVENT",
       "description": "We developed an interactive immersive factory inspired by LEGO that followed the journey of “Chuck,” our flawed protagonist, demonstrating how Intel’s AI tech improved efficiency, safety, and cost savings in manufacturing. Upon scanning a QR code, the experience starts with Chuck driving around an AR racetrack in his fancy car. But when he hits a ramp, his car blows up in mid-air. A narrator says, “Let’s see how this could have been prevented had we used Intel’s AI technology.”",
-      "videos": ["intelBuild/video1.webm", "intelBuild/video3.webm"]
+      "videos": [
+        "intelBuild/video1.webm",
+        "intelBuild/video3.webm",
+        "intelBuild/video4.mp4"
+      ]
     },
     {
       "title": "TOKEN WRANGLER 5000",

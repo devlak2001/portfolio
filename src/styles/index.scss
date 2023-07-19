@@ -74,8 +74,11 @@ a {
   align-items: center;
   justify-content: center;
   transition: transform 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
-  font-size: 100px;
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  font-size: 9vh;
+  @media (max-aspect-ratio: 1512 / 982) {
+    font-size: 7vw;
+  }
   &.loaded {
     transform: translateX(-50%);
     pointer-events: none;
@@ -162,10 +165,10 @@ a {
 
 @font-face {
   font-family: Consolas;
-  src: url("../../public/assets/fonts/Consolas.TTF");
+  src: url("../../public/assets/fonts/Consolas.woff2");
 }
 
 @font-face {
   font-family: ConsolasBold;
-  src: url("../../public/assets/fonts/ConsolasBold.TTF");
+  src: url("../../public/assets/fonts/ConsolasBold.woff2");
 }

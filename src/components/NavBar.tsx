@@ -50,7 +50,15 @@ export default function NavBar() {
               <span className="inactive">ABOUT ME</span>
               <span className="active">ABOUT ME</span>
             </div>
-            <div className="link">
+            <div
+              className="link"
+              onClick={() => {
+                document.querySelector(".ProjectsPage")!.scrollIntoView({
+                  behavior: "smooth",
+                  block: "end",
+                });
+              }}
+            >
               <img
                 src={
                   process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"

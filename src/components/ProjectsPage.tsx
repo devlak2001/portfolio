@@ -46,16 +46,23 @@ export default function ProjectsPage() {
     ) as HTMLElement;
     const presentationContent = document.querySelector(
       ".ProjectsPage .contentWrapper"
-    )?.childNodes as NodeListOf<HTMLElement>;
+    )?.childNodes as NodeListOf<any>;
 
-    presentationContent![currentProjectAsset - 1].addEventListener(
-      "canplay",
-      () => {
-        contentWrapper!.style.width =
-          presentationContent![currentProjectAsset - 1].getBoundingClientRect()
-            .width + "px";
-      }
-    );
+    if (presentationContent![currentProjectAsset - 1].readyState === 4) {
+      contentWrapper!.style.width =
+        presentationContent![currentProjectAsset - 1].getBoundingClientRect()
+          .width + "px";
+    } else {
+      presentationContent![currentProjectAsset - 1].addEventListener(
+        "canplay",
+        () => {
+          contentWrapper!.style.width =
+            presentationContent![
+              currentProjectAsset - 1
+            ].getBoundingClientRect().width + "px";
+        }
+      );
+    }
   }, [currentProjectAsset]);
 
   useEffect(() => {
@@ -139,7 +146,7 @@ export default function ProjectsPage() {
             />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <button
+            {/* <button
               className={`${
                 currentProject < json.projects.length ? "" : "inactive"
               }`}
@@ -156,10 +163,71 @@ export default function ProjectsPage() {
                 }
                 alt=""
               />
-              <span>NEXT PROJECT</span>
-            </button>
+            </button> */}
+            <div className="pagination">
+              <button
+                className={`left`}
+                onClick={() => {
+                  if (currentProject > 1) {
+                    setCurrentProject(currentProject - 1);
+                  } else {
+                    setCurrentProject(json.projects.length);
+                  }
+                }}
+              >
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/ProjectsPage/arrowLeft2.png"
+                  }
+                  alt=""
+                />
+              </button>
+              <div className="numbers">
+                {pagination(
+                  currentProject,
+                  json.projects.length,
+                  setCurrentProject
+                )}
+              </div>
+              <button
+                className={`right`}
+                onClick={() => {
+                  if (currentProject < json.projects.length) {
+                    setCurrentProject(currentProject + 1);
+                  } else {
+                    setCurrentProject(1);
+                  }
+                }}
+              >
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/ProjectsPage/arrowRight2.png"
+                  }
+                  alt=""
+                />
+              </button>
+            </div>
           </div>
           <div className={`presentation`}>
+            <div className="contentWrapper">
+              {project.videos.map((el, index) => (
+                <>
+                  <video
+                    className={`${
+                      index + 1 === currentProjectAsset ? "active" : ""
+                    }`}
+                    style={{ visibility: "hidden" }}
+                    autoPlay={true}
+                    playsInline={true}
+                    muted={true}
+                    controls={true}
+                    src={process.env.PUBLIC_URL + "/assets/videos/" + el}
+                  ></video>
+                </>
+              ))}
+            </div>
             <button
               className="prev"
               onClick={() => {
@@ -179,23 +247,6 @@ export default function ProjectsPage() {
                 alt=""
               />
             </button>
-            <div className="contentWrapper">
-              {project.videos.map((el, index) => (
-                <>
-                  <video
-                    className={`${
-                      index + 1 === currentProjectAsset ? "active" : ""
-                    }`}
-                    style={{ visibility: "hidden" }}
-                    autoPlay={true}
-                    playsInline={true}
-                    muted={true}
-                    controls={true}
-                    src={process.env.PUBLIC_URL + "/assets/videos/" + el}
-                  ></video>
-                </>
-              ))}
-            </div>
             <button
               className="next"
               onClick={() => {
@@ -214,50 +265,26 @@ export default function ProjectsPage() {
                 alt=""
               />
             </button>
-          </div>
-        </div>
-        <div className="pagination">
-          <button
-            className={`left ${currentProject === 1 ? "inactive" : ""}`}
-            onClick={() => {
-              if (currentProject > 1) {
-                setCurrentProject(currentProject - 1);
-              }
-            }}
-          >
+            <div className="number">
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ProjectsPage/buttonBkg.png"
+                }
+                alt=""
+              />
+              <span>{currentProjectAsset}</span>/
+              <span>{project.videos.length}</span>
+            </div>
             <img
               src={
                 process.env.PUBLIC_URL +
-                "/assets/images/ProjectsPage/arrowLeft2.png"
+                "/assets/images/ProjectsPage/projectGallery.png"
               }
               alt=""
+              className="title"
             />
-          </button>
-          <div className="numbers">
-            {pagination(
-              currentProject,
-              json.projects.length,
-              setCurrentProject
-            )}
           </div>
-          <button
-            className={`right ${
-              currentProject < json.projects.length ? "" : "inactive"
-            }`}
-            onClick={() => {
-              if (currentProject < json.projects.length) {
-                setCurrentProject(currentProject + 1);
-              }
-            }}
-          >
-            <img
-              src={
-                process.env.PUBLIC_URL +
-                "/assets/images/ProjectsPage/arrowRight2.png"
-              }
-              alt=""
-            />
-          </button>
         </div>
       </section>
     </>

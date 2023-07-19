@@ -74,6 +74,25 @@
       top: -68%;
       left: -35%;
     }
+    .shadow1,
+    .shadow2,
+    .shadow3 {
+      position: absolute;
+      height: auto;
+      width: 7em;
+    }
+    .shadow1 {
+      top: 20%;
+      left: 107%;
+    }
+    .shadow2 {
+      left: -28%;
+      top: 27%;
+    }
+    .shadow3 {
+      left: 78%;
+      top: 140%;
+    }
     .joystick {
       width: 16.8em;
       left: -10em;
