@@ -232,17 +232,14 @@
         &::-webkit-scrollbar {
           display: none;
         }
-        video {
+        .slide {
           position: absolute;
-          pointer-events: none;
           height: 100%;
-          width: auto;
-          background-color: black;
-          max-width: 35em;
-          box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.5);
+          pointer-events: none;
           transition: clip-path 0.35s ease;
           clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
           &.active {
+            pointer-events: all;
             transition: clip-path 0.35s 0.1s ease;
             clip-path: polygon(
               -1em -1em,
@@ -251,6 +248,50 @@
               -1em calc(100% + 1em)
             );
             pointer-events: all;
+          }
+          video {
+            width: auto;
+            height: 100%;
+            background-color: black;
+            max-width: 35em;
+            box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.5);
+          }
+          .loadingOverlay {
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            transition: opacity 0.35s ease;
+            .loader {
+              width: 1.5em;
+              height: 1.5em;
+              border-radius: 50%;
+              position: relative;
+              animation: rotate 1s linear infinite;
+            }
+            .loader::before,
+            .loader::after {
+              content: "";
+              box-sizing: border-box;
+              position: absolute;
+              inset: 0px;
+              border-radius: 50%;
+              border: 0.15em solid white;
+              animation: prixClipFix 2s linear infinite;
+            }
+            .loader::after {
+              border-color: #f05955;
+              animation: prixClipFix 2s linear infinite,
+                rotate 0.5s linear infinite reverse;
+              inset: 0.25em;
+            }
           }
         }
       }

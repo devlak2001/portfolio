@@ -4,46 +4,53 @@
       "title": "INTEL AR EXPERIENCE FOR MICROSOFT BUILD EVENT",
       "description": "We developed an interactive immersive factory inspired by LEGO that followed the journey of “Chuck,” our flawed protagonist, demonstrating how Intel’s AI tech improved efficiency, safety, and cost savings in manufacturing. Upon scanning a QR code, the experience starts with Chuck driving around an AR racetrack in his fancy car. But when he hits a ramp, his car blows up in mid-air. A narrator says, “Let’s see how this could have been prevented had we used Intel’s AI technology.”",
       "videos": [
-        "intelBuild/video1.webm",
-        "intelBuild/video3.webm",
-        "intelBuild/video4.mp4"
+        { "url": "intelBuild/video1.webm", "poster": "intelBuild/video1.png" },
+        { "url": "intelBuild/video3.webm", "poster": "intelBuild/video3.png" },
+        { "url": "intelBuild/video4.mp4", "poster": "intelBuild/video4.png" }
       ]
     },
     {
       "title": "TOKEN WRANGLER 5000",
       "description": "Intel Innovation is an annual event for developers and technology specialists. It’s designed for experts to gather, learn, share, and collaborate using the latest in advanced Intel and Microsoft technology. For 2022, Intel aimed to push the experience further. They wanted to deliver a developer-first experience to increase developer participation throughout the event via fun and educational programs, with the developer community at the heart of the experience. ",
-      "videos": ["intelInnovation/video1.webm", "intelInnovation/video2.mp4"]
+      "videos": [
+        {
+          "url": "intelInnovation/video1.webm",
+          "poster": "intelInnovation/video1.png"
+        },
+        {
+          "url": "intelInnovation/video2.mp4",
+          "poster": "intelInnovation/video2.png"
+        }
+      ]
     },
     {
       "title": "CHRONIC CELLARS PURPLE PARADISE",
       "description": "Chronic Cellars are a relatively new and growing winemaker of Paso Robles, part of the Winery Exchange family. For over 15 years, they’ve provided unpretentious, delicious wines with a rebel spirit, bringing a disruptive style that is matched only by the killer quality of their wines. With such a distinctive brand, Chronic Cellars wanted to add more value to the consumer’s purchase of their flagship red, Purple Paradise, through an immersive technology experience that brought their brand and colourful character to life.",
-      "videos": ["chronicCellars/video1.mp4", "chronicCellars/video2.mp4"]
+      "videos": [
+        {
+          "url": "chronicCellars/video1.mp4",
+          "poster": "chronicCellars/video1.png"
+        },
+        {
+          "url": "chronicCellars/video2.mp4",
+          "poster": "chronicCellars/video2.png"
+        }
+      ]
     },
     {
-      "title": "INTEL AR EXPERIENCE FOR MICROSOFT BUILD EVENT",
-      "description": "We developed an interactive immersive factory inspired by LEGO that followed the journey of “Chuck,” our flawed protagonist, demonstrating how Intel’s AI tech improved efficiency, safety, and cost savings in manufacturing. Upon scanning a QR code, the experience starts with Chuck driving around an AR racetrack in his fancy car. But when he hits a ramp, his car blows up in mid-air. A narrator says, “Let’s see how this could have been prevented had we used Intel’s AI technology.”",
+      "title": "IMMERSIVE WEB AR PORTAL FOR GLENLIVET",
+      "description": "The Glenlivet are the biggest-selling single malt whisky brand in the United States and the second biggest brand globally. As a market-leading brand, The Glenlivet continues to redefine and reimagine itself to raise awareness among new audiences while positioning itself as a premium whisky maker. Upon launching a new prestige line of whisky – The Sample Room Collection – The Glenlivet sought a way to introduce the beverage brand in an exciting, interactive, and unique way for this product category. As part of the launch strategy, The Glenlivet wanted to create a physical and virtual sample room that brought audiences into the heart of The Glenlivet distillery. The Sample Room is the company’s creative epicentre, where the whisky makers create and craft new flavours and luxurious finishes.",
       "videos": [
-        "intelBuild/video1.webm",
-        "intelBuild/video2.webm",
-        "intelBuild/video1.webm"
+        { "url": "glenlivet/video1.mp4", "poster": "glenlivet/video1.png" }
       ]
     },
     {
       "title": "INTEL AR EXPERIENCE FOR MICROSOFT BUILD EVENT",
       "description": "We developed an interactive immersive factory inspired by LEGO that followed the journey of “Chuck,” our flawed protagonist, demonstrating how Intel’s AI tech improved efficiency, safety, and cost savings in manufacturing. Upon scanning a QR code, the experience starts with Chuck driving around an AR racetrack in his fancy car. But when he hits a ramp, his car blows up in mid-air. A narrator says, “Let’s see how this could have been prevented had we used Intel’s AI technology.”",
       "videos": [
-        "intelBuild/video1.webm",
-        "intelBuild/video2.webm",
-        "intelBuild/video1.webm"
-      ]
-    },
-    {
-      "title": "INTEL AR EXPERIENCE FOR MICROSOFT BUILD EVENT",
-      "description": "We developed an interactive immersive factory inspired by LEGO that followed the journey of “Chuck,” our flawed protagonist, demonstrating how Intel’s AI tech improved efficiency, safety, and cost savings in manufacturing. Upon scanning a QR code, the experience starts with Chuck driving around an AR racetrack in his fancy car. But when he hits a ramp, his car blows up in mid-air. A narrator says, “Let’s see how this could have been prevented had we used Intel’s AI technology.”",
-      "videos": [
-        "intelBuild/video1.webm",
-        "intelBuild/video2.webm",
-        "intelBuild/video1.webm"
+        { "url": "intelBuild/video1.webm", "poster": "intelBuild/video1.png" },
+        { "url": "intelBuild/video3.webm", "poster": "intelBuild/video3.png" },
+        { "url": "intelBuild/video4.mp4", "poster": "intelBuild/video4.png" }
       ]
     }
   ]

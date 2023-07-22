@@ -44,40 +44,51 @@ export default function ProjectsPage() {
     const contentWrapper = document.querySelector(
       ".ProjectsPage .contentWrapper"
     ) as HTMLElement;
-    const presentationContent = document.querySelector(
-      ".ProjectsPage .contentWrapper"
-    )?.childNodes as NodeListOf<any>;
+    const currentSlide = document.querySelectorAll(
+      ".ProjectsPage .contentWrapper .slide"
+    )[currentProjectAsset - 1];
+    const currentVideo = currentSlide.childNodes[0] as HTMLVideoElement;
 
-    if (presentationContent![currentProjectAsset - 1].readyState === 4) {
+    (currentSlide.childNodes[1] as HTMLVideoElement).style.opacity = "1";
+    (currentSlide.childNodes[1] as HTMLVideoElement).style.opacity = "all";
+    if (currentVideo.readyState === 4) {
+      (currentSlide.childNodes[1] as HTMLVideoElement).style.opacity = "0";
+      (currentSlide.childNodes[1] as HTMLVideoElement).style.opacity = "none";
+      (currentSlide.childNodes[1] as HTMLVideoElement).style.width =
+        currentVideo.getBoundingClientRect().width + "px";
       contentWrapper!.style.width =
-        presentationContent![currentProjectAsset - 1].getBoundingClientRect()
-          .width + "px";
+        currentVideo.getBoundingClientRect().width + "px";
     } else {
-      presentationContent![currentProjectAsset - 1].addEventListener(
-        "canplay",
-        () => {
-          contentWrapper!.style.width =
-            presentationContent![
-              currentProjectAsset - 1
-            ].getBoundingClientRect().width + "px";
-        }
-      );
+      currentVideo.addEventListener("canplay", () => {
+        (currentSlide.childNodes[1] as HTMLVideoElement).style.opacity = "0";
+        (currentSlide.childNodes[1] as HTMLVideoElement).style.opacity = "none";
+        (currentSlide.childNodes[1] as HTMLVideoElement).style.width =
+          currentVideo.getBoundingClientRect().width + "px";
+        contentWrapper!.style.width =
+          currentVideo.getBoundingClientRect().width + "px";
+      });
     }
   }, [currentProjectAsset]);
 
   useEffect(() => {
     setCurrentProjectAsset(1);
-    const presentationContent = document.querySelector(
-      ".ProjectsPage .contentWrapper"
-    )?.childNodes as NodeListOf<HTMLElement>;
+    const presentationContent = document.querySelectorAll(
+      ".ProjectsPage .contentWrapper .slide"
+    ) as any;
 
-    presentationContent.forEach((el: any) => {
-      el.style.visibility = "hidden";
-      if (el.readyState === 4) {
-        el.style.visibility = "visible";
+    presentationContent.forEach((el: HTMLElement, index: number) => {
+      (el.childNodes[0] as HTMLVideoElement).style.visibility = "hidden";
+      (el.childNodes[1] as HTMLElement).style.opacity = "1";
+      (el.childNodes[1] as HTMLElement).style.pointerEvents = "all";
+      if ((el.childNodes[0] as HTMLVideoElement).readyState === 4) {
+        (el.childNodes[0] as HTMLVideoElement).style.visibility = "visible";
+        (el.childNodes[1] as HTMLElement).style.opacity = "0";
+        (el.childNodes[1] as HTMLElement).style.pointerEvents = "none";
       } else {
-        el.addEventListener("canplay", () => {
-          el.style.visibility = "visible";
+        el.childNodes[0].addEventListener("canplay", () => {
+          (el.childNodes[0] as HTMLVideoElement).style.visibility = "visible";
+          (el.childNodes[1] as HTMLElement).style.opacity = "0";
+          (el.childNodes[1] as HTMLElement).style.pointerEvents = "none";
         });
       }
     });
@@ -88,18 +99,22 @@ export default function ProjectsPage() {
       const contentWrapper = document.querySelector(
         ".ProjectsPage .contentWrapper"
       ) as HTMLElement;
-      const presentationContent = document.querySelector(
-        ".ProjectsPage .contentWrapper"
-      )?.childNodes as NodeListOf<HTMLElement>;
-
+      const presentationContent = document.querySelectorAll(
+        ".ProjectsPage .contentWrapper .slide"
+      ) as any;
       presentationContent.forEach((el: any) => {
-        el.style.visibility = "hidden";
-        if (el.readyState === 4) {
-          el.style.visibility = "visible";
+        console.log(el.childNodes[0] as HTMLVideoElement);
+        (el.childNodes[0] as HTMLVideoElement).style.visibility = "hidden";
+        if ((el.childNodes[0] as HTMLVideoElement).readyState === 4) {
+          (el.childNodes[0] as HTMLVideoElement).style.visibility = "visible";
         } else {
-          el.addEventListener("canplay", () => {
-            el.style.visibility = "visible";
-          });
+          (el.childNodes[0] as HTMLVideoElement).addEventListener(
+            "canplay",
+            () => {
+              (el.childNodes[0] as HTMLVideoElement).style.visibility =
+                "visible";
+            }
+          );
         }
       });
       presentationContent![currentProjectAsset - 1].addEventListener(
@@ -108,7 +123,7 @@ export default function ProjectsPage() {
           contentWrapper!.style.width =
             presentationContent![
               currentProjectAsset - 1
-            ].getBoundingClientRect().width + "px";
+            ].childNodes[0].getBoundingClientRect().width + "px";
         }
       );
     });
@@ -212,19 +227,29 @@ export default function ProjectsPage() {
           </div>
           <div className={`presentation`}>
             <div className="contentWrapper">
-              {project.videos.map((el, index) => (
+              {project.videos.map((el: any, index) => (
                 <>
-                  <video
-                    className={`${
-                      index + 1 === currentProjectAsset ? "active" : ""
+                  <div
+                    className={`slide ${
+                      index === currentProjectAsset - 1 ? "active" : ""
                     }`}
-                    style={{ visibility: "hidden" }}
-                    autoPlay={true}
-                    playsInline={true}
-                    muted={true}
-                    controls={true}
-                    src={process.env.PUBLIC_URL + "/assets/videos/" + el}
-                  ></video>
+                  >
+                    <video
+                      className={`${
+                        index + 1 === currentProjectAsset ? "active" : ""
+                      }`}
+                      muted={true}
+                      controls={true}
+                      style={{ visibility: "hidden" }}
+                      poster={
+                        process.env.PUBLIC_URL + "/assets/videos/" + el.poster
+                      }
+                      src={process.env.PUBLIC_URL + "/assets/videos/" + el.url}
+                    ></video>
+                    <div className="loadingOverlay" style={{ opacity: "0" }}>
+                      <span className="loader"></span>
+                    </div>
+                  </div>
                 </>
               ))}
             </div>
