@@ -3,7 +3,7 @@ nav {
   left: 0;
   top: 0;
   width: 100%;
-  height: 125px;
+  height: 6.25em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,21 +11,44 @@ nav {
   background-color: transparent;
   transition: background-color 0.35s ease, height 0.35s ease;
   backdrop-filter: blur(0);
-  @media (max-width: 1512px) {
-    height: 8.2vw;
+  font-size: 2.1vh;
+  @media (max-aspect-ratio: 1512 / 982) {
+    font-size: 1.32vw;
+  }
+  @media (max-width: 980px),
+    (max-width: 980px) and (max-aspect-ratio: 1512 / 982) {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    font-size: 10px;
+    @media (max-width: 600px) {
+      height: 100%;
+      align-items: flex-start;
+      clip-path: polygon(0 0, 100% 0, 100% 6.25em, 0 6.25em);
+      transition: clip-path 0.5s ease;
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
   }
   &.stick {
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(8px);
-    height: 90px;
-    @media (max-width: 1512px) {
-      height: 5.9vw;
-    }
+    height: 4.5em;
+
     .inner {
       transform: translateX(0);
     }
     .logo {
       transform: scale(0.8);
+      @media (max-width: 980px) {
+        transform: scale(1);
+      }
+    }
+    @media (max-width: 980px) {
+      height: 6.25em;
+      @media (max-width: 600px) {
+        height: 100%;
+      }
     }
   }
   .inner {
@@ -33,14 +56,22 @@ nav {
     align-items: center;
     transform: translateX(-40%);
     transition: transform 0.35s ease;
+    @media (max-width: 980px) {
+      transform: translateX(0);
+      @media (max-width: 600px) {
+        width: 100%;
+        height: 100%;
+      }
+    }
     .logo {
-      height: 75px;
+      height: 3.75em;
       width: auto;
-      margin-right: 29px;
+      margin-right: 0.38em;
       transition: transform 0.35s ease;
-      @media (max-width: 1512px) {
-        height: 4.96vw;
-        margin-right: 1.91vw;
+      @media (max-width: 600px) {
+        position: absolute;
+        top: 1em;
+        left: 2em;
       }
     }
     .links {
@@ -48,14 +79,25 @@ nav {
       align-items: center;
       font-family: Rustico;
 
-      font-size: 24px;
-      @media (max-width: 1512px) {
-        font-size: 1.58vw;
+      font-size: 1.2em;
+      @media (max-width: 980px) {
+        font-size: 1.8em;
+        @media (max-width: 600px) {
+          font-size: 2.4em;
+          width: 100%;
+          top: 2.8em;
+          left: 0;
+          flex-direction: column;
+        }
       }
+
       .link {
         position: relative;
         top: 0.2em;
         margin: 0 1.2em;
+        @media (max-width: 980px) {
+          margin: 0 1.2em;
+        }
         .brush {
           position: absolute;
           height: 130%;
@@ -81,6 +123,21 @@ nav {
           }
         }
       }
+    }
+  }
+  .toggleButton {
+    position: absolute;
+    right: 2em;
+    top: 1.8em;
+    pointer-events: none;
+    visibility: hidden;
+    @media (max-width: 600px) {
+      visibility: visible;
+      pointer-events: all;
+    }
+    img {
+      width: 3em;
+      height: auto;
     }
   }
 }

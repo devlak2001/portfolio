@@ -4,8 +4,8 @@
       "title": "INTEL AR EXPERIENCE FOR MICROSOFT BUILD EVENT",
       "description": "We developed an interactive immersive factory inspired by LEGO that followed the journey of “Chuck,” our flawed protagonist, demonstrating how Intel’s AI tech improved efficiency, safety, and cost savings in manufacturing. Upon scanning a QR code, the experience starts with Chuck driving around an AR racetrack in his fancy car. But when he hits a ramp, his car blows up in mid-air. A narrator says, “Let’s see how this could have been prevented had we used Intel’s AI technology.”",
       "videos": [
-        { "url": "intelBuild/video1.webm", "poster": "intelBuild/video1.png" },
-        { "url": "intelBuild/video3.webm", "poster": "intelBuild/video3.png" },
+        { "url": "intelBuild/video1.mp4", "poster": "intelBuild/video1.png" },
+        { "url": "intelBuild/video3.mp4", "poster": "intelBuild/video3.png" },
         { "url": "intelBuild/video4.mp4", "poster": "intelBuild/video4.png" }
       ]
     },
@@ -14,7 +14,7 @@
       "description": "Intel Innovation is an annual event for developers and technology specialists. It’s designed for experts to gather, learn, share, and collaborate using the latest in advanced Intel and Microsoft technology. For 2022, Intel aimed to push the experience further. They wanted to deliver a developer-first experience to increase developer participation throughout the event via fun and educational programs, with the developer community at the heart of the experience. ",
       "videos": [
         {
-          "url": "intelInnovation/video1.webm",
+          "url": "intelInnovation/video1.mp4",
           "poster": "intelInnovation/video1.png"
         },
         {
@@ -45,12 +45,10 @@
       ]
     },
     {
-      "title": "INTEL AR EXPERIENCE FOR MICROSOFT BUILD EVENT",
-      "description": "We developed an interactive immersive factory inspired by LEGO that followed the journey of “Chuck,” our flawed protagonist, demonstrating how Intel’s AI tech improved efficiency, safety, and cost savings in manufacturing. Upon scanning a QR code, the experience starts with Chuck driving around an AR racetrack in his fancy car. But when he hits a ramp, his car blows up in mid-air. A narrator says, “Let’s see how this could have been prevented had we used Intel’s AI technology.”",
+      "title": "MUSCLE CAR GAME",
+      "description": "Welcome to the adrenaline-pumping world of \"Muscle Car Game\" – an electrifying web-based driving game that promises endless excitement and challenges! Take the wheel of an iconic orange muscle car and put your driving skills to the test as you embark on an epic journey down an infinite highway. In \"Muscle Car Game\" players get to control their orange muscle car as it speeds down a multi-lane highway. The objective is simple: survive as long as possible while collecting points along the way. The longer you stay on the road, the higher your score climbs! The game offers intuitive controls suitable for both desktop and mobile devices. Players can easily switch between three lanes by tapping or using arrow keys, making it effortless to maneuver through traffic and avoid obstacles. While cruising down the highway, players must remain vigilant, as the road ahead is filled with challenging obstacles and roadblocks. Dodge and weave through traffic, skillfully maneuver around fallen debris, and stay away from unexpected barriers that could spell disaster for your journey! Unlike traditional games, \"Muscle Car Game\" doesn't have an endpoint. The goal is to achieve the highest score possible by staying on the road and avoiding obstacles for as long as possible. This feature allows players to test their limits and compete against their friends. Immerse yourself in high-octane action with vibrant graphics and dynamic sound effects that complement the fast-paced gameplay. The stunning visuals and adrenaline-pumping soundtrack will keep you hooked for hours on end. Whether at home on your desktop or on the go with your mobile device, \"Orange Muscle Mayhem\" offers seamless gameplay across all platforms. Launch your favorite browser, and you're ready to hit the road and chase high scores wherever you are.",
       "videos": [
-        { "url": "intelBuild/video1.webm", "poster": "intelBuild/video1.png" },
-        { "url": "intelBuild/video3.webm", "poster": "intelBuild/video3.png" },
-        { "url": "intelBuild/video4.mp4", "poster": "intelBuild/video4.png" }
+        { "url": "carGame/video1.mp4", "poster": "carGame/video1.png" }
       ]
     }
   ]

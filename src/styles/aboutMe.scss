@@ -4,6 +4,13 @@
   @media (max-aspect-ratio: 1512 / 982) {
     height: 64.9vw;
   }
+  @media (max-width: 980px),
+    (max-width: 980px) and (max-aspect-ratio: 1512 / 982) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+  }
   .backgroundPiece1 {
     position: absolute;
     top: 50%;
@@ -52,6 +59,23 @@
     // }
     @media (max-aspect-ratio: 1512 / 982) {
       font-size: 1.32vw;
+      @media (max-width: 1100px) {
+        font-size: 1.45vw;
+      }
+    }
+    @media (max-width: 980px),
+      (max-width: 980px) and (max-aspect-ratio: 1512 / 982) {
+      position: relative;
+      transform: unset;
+      top: unset;
+      left: unset;
+      font-size: 16px;
+      margin-top: 12em;
+      margin-bottom: 14em;
+      @media (max-width: 720px) {
+        width: calc(100% - 40px);
+        max-width: 420px;
+      }
     }
     .japaneseSurname,
     .japaneseName,
@@ -68,11 +92,20 @@
       width: 34.9em;
       left: -30.13em;
       bottom: -15em;
+      @media (max-width: 720px) {
+        left: -35em;
+      }
     }
     .textBkg {
       width: 173%;
       top: -68%;
       left: -35%;
+      @media (max-width: 720px) {
+        width: 730px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49%, -60%);
+      }
     }
     .shadow1,
     .shadow2,
@@ -80,18 +113,48 @@
       position: absolute;
       height: auto;
       width: 7em;
+      @media (max-width: 420px) {
+        width: 20vw;
+      }
     }
     .shadow1 {
       top: 20%;
       left: 107%;
+
+      @media (max-width: 720px) {
+        top: 165%;
+        left: 5%;
+        @media (max-width: 420px) {
+          top: calc(100% + 38vw);
+          left: 7%;
+        }
+      }
     }
     .shadow2 {
       left: -28%;
       top: 27%;
+
+      @media (max-width: 720px) {
+        top: 165%;
+        left: 40%;
+        @media (max-width: 420px) {
+          top: calc(100% + 40vw);
+          left: 40%;
+        }
+      }
     }
     .shadow3 {
       left: 78%;
       top: 140%;
+      @media (max-width: 720px) {
+        top: 161%;
+        left: 68%;
+        @media (max-width: 420px) {
+          top: calc(100% + 38vw);
+          right: 15%;
+          left: unset;
+        }
+      }
     }
     .joystick {
       width: 16.8em;
@@ -99,6 +162,15 @@
       top: -11em;
       opacity: 0.9;
       animation: joystickFloating 3s ease infinite;
+      @media (max-width: 720px) {
+        top: 100%;
+        left: -2em;
+        width: 13em;
+        @media (max-width: 420px) {
+          width: 40vw;
+          left: 0;
+        }
+      }
       @keyframes joystickFloating {
         0% {
           transform: translateY(0) rotateZ(0deg);
@@ -116,6 +188,15 @@
       right: -11em;
       top: -11em;
       animation: beerFloating 3s ease infinite;
+      @media (max-width: 720px) {
+        top: 100%;
+        left: 8em;
+        width: 12em;
+        @media (max-width: 420px) {
+          width: 40vw;
+          left: 32%;
+        }
+      }
       @keyframes beerFloating {
         0% {
           transform: translateY(5%) rotateZ(0deg);
@@ -133,6 +214,17 @@
       right: -9em;
       bottom: -10em;
       animation: popcornFloating 3s ease infinite;
+
+      @media (max-width: 720px) {
+        top: 100%;
+        left: 16em;
+        width: 12em;
+        @media (max-width: 420px) {
+          width: 40vw;
+          left: unset;
+          right: 0;
+        }
+      }
       @keyframes popcornFloating {
         0% {
           transform: translateY(-5%) rotateZ(2deg);
@@ -165,6 +257,12 @@
       overflow-y: scroll;
       line-height: 120%;
       position: relative;
+      scrollbar-color: #f05955 black;
+      scrollbar-width: thin;
+      box-shadow: inset 0 -7px 9px -7px rgba(0, 0, 0, 0.7);
+      @media (max-width: 720px) {
+        padding: 0;
+      }
       &::-webkit-scrollbar {
         width: 5px;
         overflow: visible;

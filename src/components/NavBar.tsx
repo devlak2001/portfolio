@@ -3,6 +3,9 @@ import "../styles/navBar.scss";
 
 export default function NavBar() {
   const [stick, setStick] = useState(false);
+  const [mobileState, setMobileState] = useState<"active" | "inactive" | "">(
+    ""
+  );
 
   useEffect(() => {
     document.addEventListener("scroll", (event: any) => {
@@ -23,7 +26,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className={`${stick ? "stick" : ""}`}>
+      <nav className={`${stick ? "stick" : ""} ${mobileState}`}>
         <div className="inner">
           <img
             src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
@@ -34,10 +37,14 @@ export default function NavBar() {
             <div
               className="link"
               onClick={() => {
-                document.querySelector(".AboutMe")!.scrollIntoView({
-                  behavior: "smooth",
-                  block: "end",
-                });
+                document
+                  .querySelector(".AboutMe")!
+                  .scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest",
+                    inline: "start",
+                  });
+                setMobileState("inactive");
               }}
             >
               <img
@@ -53,10 +60,14 @@ export default function NavBar() {
             <div
               className="link"
               onClick={() => {
-                document.querySelector(".ProjectsPage")!.scrollIntoView({
-                  behavior: "smooth",
-                  block: "end",
-                });
+                document
+                  .querySelector(".ProjectsPage")!
+                  .scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest",
+                    inline: "start",
+                  });
+                setMobileState("inactive");
               }}
             >
               <img
@@ -93,6 +104,21 @@ export default function NavBar() {
             </div>
           </div>
         </div>
+        <button
+          className="toggleButton"
+          onClick={() => {
+            if (mobileState === "active") {
+              setMobileState("inactive");
+            } else {
+              setMobileState("active");
+            }
+          }}
+        >
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/NavBar/hamburger.png"}
+            alt=""
+          />
+        </button>
       </nav>
     </>
   );
