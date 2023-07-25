@@ -39,7 +39,7 @@
     transform: translate(-24%, -52%);
     width: auto;
     height: 135.3%;
-    opacity: 0.6;
+    opacity: 1;
     mix-blend-mode: color-burn;
   }
   h2 {
@@ -66,13 +66,13 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      max-height: 24em;
+      max-height: 28em;
       @media (max-width: 980px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 26.2em;
-        max-height: 22em;
+        max-height: 24em;
         @media (max-width: 720px) {
           width: calc(100% - 40px);
         }
@@ -85,6 +85,20 @@
         top: -19%;
         @media (max-width: 980px) {
           left: 0;
+        }
+      }
+      .badge {
+        position: relative;
+        height: 5em;
+        width: auto;
+        margin-top: 1em;
+        transition: transform 0.35s ease, filter 0.35s ease;
+        pointer-events: all;
+        transform: translateY(-0.125em);
+        filter: drop-shadow(0em 0.25em 0 black);
+        &:hover {
+          transform: translateY(0);
+          filter: drop-shadow(0em 0em 0 black);
         }
       }
       h3 {
@@ -152,7 +166,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        margin-top: 2em;
+        margin-top: 1.5em;
         font-size: 1em;
         .numbers {
           display: flex;
@@ -204,7 +218,7 @@
     }
     .presentation {
       height: 24em;
-      margin-left: 6em;
+      margin-left: 4em;
       margin-top: 2em;
       position: relative;
       @media (max-width: 980px) {

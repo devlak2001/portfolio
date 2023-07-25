@@ -7,6 +7,12 @@
         { "url": "intelBuild/video1.mp4", "poster": "intelBuild/video1.png" },
         { "url": "intelBuild/video3.mp4", "poster": "intelBuild/video3.png" },
         { "url": "intelBuild/video4.mp4", "poster": "intelBuild/video4.png" }
+      ],
+      "associates": [
+        {
+          "img": "/associates/rpr.png",
+          "url": "https://rockpaperreality.com/"
+        }
       ]
     },
     {
@@ -20,6 +26,12 @@
         {
           "url": "intelInnovation/video2.mp4",
           "poster": "intelInnovation/video2.png"
+        }
+      ],
+      "associates": [
+        {
+          "img": "/associates/rpr.png",
+          "url": "https://rockpaperreality.com/"
         }
       ]
     },
@@ -35,13 +47,26 @@
           "url": "chronicCellars/video2.mp4",
           "poster": "chronicCellars/video2.png"
         }
+      ],
+      "associates": [
+        {
+          "img": "/associates/rpr.png",
+          "url": "https://rockpaperreality.com/"
+        }
       ]
     },
     {
       "title": "IMMERSIVE WEB AR PORTAL FOR GLENLIVET",
       "description": "The Glenlivet are the biggest-selling single malt whisky brand in the United States and the second biggest brand globally. As a market-leading brand, The Glenlivet continues to redefine and reimagine itself to raise awareness among new audiences while positioning itself as a premium whisky maker. Upon launching a new prestige line of whisky – The Sample Room Collection – The Glenlivet sought a way to introduce the beverage brand in an exciting, interactive, and unique way for this product category. As part of the launch strategy, The Glenlivet wanted to create a physical and virtual sample room that brought audiences into the heart of The Glenlivet distillery. The Sample Room is the company’s creative epicentre, where the whisky makers create and craft new flavours and luxurious finishes.",
       "videos": [
-        { "url": "glenlivet/video1.mp4", "poster": "glenlivet/video1.png" }
+        { "url": "glenlivet/video1.mp4", "poster": "glenlivet/video1.png" },
+        { "url": "glenlivet/video2.mp4", "poster": "glenlivet/video2.png" }
+      ],
+      "associates": [
+        {
+          "img": "/associates/rpr.png",
+          "url": "https://rockpaperreality.com/"
+        }
       ]
     },
     {

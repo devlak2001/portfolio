@@ -142,24 +142,22 @@ export default function ProjectsPage() {
             />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            {/* <button
-              className={`${
-                currentProject < json.projects.length ? "" : "inactive"
-              }`}
-              onClick={() => {
-                if (currentProject < json.projects.length) {
-                  setCurrentProject(currentProject + 1);
-                }
-              }}
-            >
-              <img
-                src={
-                  process.env.PUBLIC_URL +
-                  "/assets/images/ProjectsPage/buttonBkg.png"
-                }
-                alt=""
-              />
-            </button> */}
+            {project.associates && (
+              <>
+                <a href={project.associates[0].url}>
+                  <img
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/assets/images" +
+                      project.associates[0].img
+                    }
+                    className="badge"
+                    alt=""
+                  />
+                </a>
+              </>
+            )}
+
             <div className="pagination">
               <button
                 className={`left`}
@@ -211,32 +209,30 @@ export default function ProjectsPage() {
           </div>
           <div className={`presentation`}>
             <div className="contentWrapper">
-              <>
-                <div className={`slide active`}>
-                  <video
-                    // className={`${
-                    //   index + 1 === currentProjectAsset ? "active" : ""
-                    // }`}
-                    muted={true}
-                    controls={true}
-                    style={{ visibility: "hidden" }}
-                    playsInline={true}
-                    poster={
-                      process.env.PUBLIC_URL +
-                      "/assets/videos/" +
-                      project.videos[currentProjectAsset - 1].poster
-                    }
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/assets/videos/" +
-                      project.videos[currentProjectAsset - 1].url
-                    }
-                  ></video>
-                  <div className="loadingOverlay" style={{ opacity: "0" }}>
-                    <span className="loader"></span>
-                  </div>
+              <div className={`slide active`}>
+                <video
+                  // className={`${
+                  //   index + 1 === currentProjectAsset ? "active" : ""
+                  // }`}
+                  muted={true}
+                  controls={true}
+                  style={{ visibility: "hidden" }}
+                  playsInline={true}
+                  poster={
+                    process.env.PUBLIC_URL +
+                    "/assets/videos/" +
+                    project.videos[currentProjectAsset - 1].poster
+                  }
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/videos/" +
+                    project.videos[currentProjectAsset - 1].url
+                  }
+                ></video>
+                <div className="loadingOverlay" style={{ opacity: "0" }}>
+                  <span className="loader"></span>
                 </div>
-              </>
+              </div>
             </div>
             <button
               className="prev"

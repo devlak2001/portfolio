@@ -61,31 +61,39 @@ export default function HomePage() {
           <div className="socials">
             <h3>SOCIALS:</h3>
             <div className="links">
-              <img
-                src={
-                  process.env.PUBLIC_URL + "/assets/images/HomePage/gmail.png"
-                }
-                alt=""
-              />
-              <img
-                src={
-                  process.env.PUBLIC_URL +
-                  "/assets/images/HomePage/linkedin.png"
-                }
-                alt=""
-              />
-              <img
-                src={
-                  process.env.PUBLIC_URL + "/assets/images/HomePage/upwork.png"
-                }
-                alt=""
-              />
-              <img
-                src={
-                  process.env.PUBLIC_URL + "/assets/images/HomePage/github.png"
-                }
-                alt=""
-              />
+              <a
+                href="https://www.linkedin.com/in/vladimir-kari%C4%87-0b3534204/"
+                target="_blank"
+              >
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/HomePage/linkedin.png"
+                  }
+                  alt=""
+                />
+              </a>
+              <a href="https://github.com/devlak2001" target="_blank">
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/HomePage/github.png"
+                  }
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.upwork.com/freelancers/~010f2b5d258ea97993"
+                target="_blank"
+              >
+                <img
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/assets/images/HomePage/upwork.png"
+                  }
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>
