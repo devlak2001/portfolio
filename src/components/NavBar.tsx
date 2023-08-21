@@ -37,13 +37,11 @@ export default function NavBar() {
             <div
               className="link"
               onClick={() => {
-                document
-                  .querySelector(".AboutMe")!
-                  .scrollIntoView({
-                    behavior: "smooth",
-                    block: "nearest",
-                    inline: "start",
-                  });
+                document.querySelector(".AboutMe")!.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                  inline: "start",
+                });
                 setMobileState("inactive");
               }}
             >
@@ -60,13 +58,11 @@ export default function NavBar() {
             <div
               className="link"
               onClick={() => {
-                document
-                  .querySelector(".ProjectsPage")!
-                  .scrollIntoView({
-                    behavior: "smooth",
-                    block: "nearest",
-                    inline: "start",
-                  });
+                document.querySelector(".ProjectsPage")!.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                  inline: "start",
+                });
                 setMobileState("inactive");
               }}
             >
@@ -80,7 +76,17 @@ export default function NavBar() {
               <span className="inactive">PROJECTS</span>
               <span className="active">PROJECTS</span>
             </div>
-            <div className="link">
+            <div
+              className="link"
+              onClick={() => {
+                document.querySelector(".ExperiencePage")!.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                  inline: "start",
+                });
+                setMobileState("inactive");
+              }}
+            >
               <img
                 src={
                   process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
