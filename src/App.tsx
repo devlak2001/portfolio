@@ -9,6 +9,7 @@ import Sakura from "./scripts/sakura";
 import { useEffect } from "react";
 import ProjectsPage from "./components/ProjectsPage";
 import ImageLoader from "./components/ImageLoader";
+import ExperiencePage from "./components/ExperiencePage";
 function App() {
   // useEffect(() => {
   //   const sakura = new Sakura(".App");
@@ -20,6 +21,7 @@ function App() {
       <HomePage />
       <AboutMe />
       <ProjectsPage />
+      <ExperiencePage />
       <ImageLoader />
     </div>
   );

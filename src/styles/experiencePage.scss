@@ -1,0 +1,82 @@
+.ExperiencePage {
+  height: 100vh;
+  position: relative;
+  font-size: 2.1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  @media (max-aspect-ratio: 1512 / 982) {
+    height: 64.9vw;
+    font-size: 1.32vw;
+    @media (max-width: 1100px) {
+      font-size: 1.45vw;
+    }
+  }
+  @media (max-width: 980px),
+    (max-width: 980px) and (max-aspect-ratio: 1512 / 982) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+    margin-top: 140px;
+    margin-bottom: 80px;
+    font-size: 16px;
+  }
+  .backgroundPiece1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-43%, -28%);
+    width: auto;
+    height: 67.6%;
+    opacity: 0.5;
+    mix-blend-mode: color-burn;
+  }
+  .backgroundPiece2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -230%);
+    width: auto;
+    height: 18.92%;
+    opacity: 0.5;
+    mix-blend-mode: color-burn;
+  }
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    width: 100%;
+    .clients,
+    .tech {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: 60em;
+      width: 100%;
+      h2 {
+        font-family: Rustico;
+        font-weight: normal;
+        font-size: 2.4em;
+        margin-bottom: 0.8em;
+      }
+      .logos {
+        width: 100%;
+        display: flex;
+        gap: 2em;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+          height: 3em;
+          width: auto;
+          min-height: 40px;
+        }
+      }
+    }
+  }
+}
