@@ -4,6 +4,7 @@ const ImageLoader = () => {
   const [allLoaded, setAllLoaded] = useState<boolean>(false);
   const [minTimePassed, setMinTimePassed] = useState<boolean>(false);
   const [hideLoader, setHideLoader] = useState<boolean>(false);
+  const [removeLoader, setRemoveLoader] = useState<boolean>(false);
   useEffect(() => {
     const images = Array.from(document.querySelectorAll("img")).map(
       (img) => (img as HTMLImageElement).src
@@ -40,19 +41,26 @@ const ImageLoader = () => {
   useEffect(() => {
     if (minTimePassed && allLoaded) {
       setHideLoader(true);
+      setTimeout(() => {
+        setRemoveLoader(true);
+      }, 1000);
     }
   }, [minTimePassed, allLoaded]);
 
   return (
     <>
-      <div className={`ImageLoader1 ${hideLoader ? "loaded" : ""}`}>
-        <span className="loader"></span>
-        <span className="loaderText">LOADING</span>
-      </div>
-      <div className={`ImageLoader2 ${hideLoader ? "loaded" : ""}`}>
-        <span className="loader"></span>
-        <span className="loaderText">LOADING</span>
-      </div>
+      {!removeLoader && (
+        <>
+          <div className={`ImageLoader1 ${hideLoader ? "loaded" : ""}`}>
+            <span className="loader"></span>
+            <span className="loaderText">LOADING</span>
+          </div>
+          <div className={`ImageLoader2 ${hideLoader ? "loaded" : ""}`}>
+            <span className="loader"></span>
+            <span className="loaderText">LOADING</span>
+          </div>
+        </>
+      )}
     </>
   ); // or you can return a loading indicator component here
 };

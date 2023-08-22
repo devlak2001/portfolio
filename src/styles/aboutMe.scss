@@ -120,32 +120,59 @@
     .shadow1 {
       top: 20%;
       left: 107%;
+      animation: beerShadowMoving 3s ease infinite;
+
+      @keyframes beerShadowMoving {
+        0% {
+          transform: scale(0.9);
+        }
+        50% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0.9);
+        }
+      }
 
       @media (max-width: 720px) {
         top: 165%;
         left: 5%;
-        @media (max-width: 420px) {
-          top: calc(100% + 38vw);
-          left: 7%;
-        }
-      }
-    }
-    .shadow2 {
-      left: -28%;
-      top: 27%;
-
-      @media (max-width: 720px) {
-        top: 165%;
-        left: 40%;
         @media (max-width: 420px) {
           top: calc(100% + 40vw);
           left: 40%;
         }
       }
     }
+    .shadow2 {
+      left: -28%;
+      top: 27%;
+      animation: joystickShadowMoving 3s ease infinite;
+
+      @media (max-width: 720px) {
+        top: 165%;
+        left: 40%;
+        @media (max-width: 420px) {
+          top: calc(100% + 38vw);
+          left: 7%;
+        }
+      }
+
+      @keyframes joystickShadowMoving {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.9);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
     .shadow3 {
       left: 78%;
       top: 140%;
+      animation: joystickShadowMoving 3s ease infinite;
       @media (max-width: 720px) {
         top: 161%;
         left: 68%;
@@ -253,7 +280,7 @@
     p {
       font-size: 1em;
       height: 9.72em;
-      padding: 0 0.8em;
+      padding: 0 0.8em 0.8em 0.8em;
       overflow-y: scroll;
       line-height: 120%;
       position: relative;

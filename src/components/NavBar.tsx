@@ -97,7 +97,7 @@ export default function NavBar() {
               <span className="inactive">EXPERIENCE</span>
               <span className="active">EXPERIENCE</span>
             </div>
-            <div className="link">
+            {/* <div className="link">
               <img
                 src={
                   process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
@@ -107,7 +107,7 @@ export default function NavBar() {
               />
               <span className="inactive">CONTACT</span>
               <span className="active">CONTACT</span>
-            </div>
+            </div> */}
           </div>
         </div>
         <button

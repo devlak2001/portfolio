@@ -94,6 +94,14 @@ export default function HomePage() {
                   alt=""
                 />
               </a>
+              <a href="mailto: vladimirkaric2001@gmail.com">
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "/assets/images/HomePage/gmail.png"
+                  }
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>

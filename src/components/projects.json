@@ -13,7 +13,8 @@
           "img": "/associates/rpr.png",
           "url": "https://rockpaperreality.com/"
         }
-      ]
+      ],
+      "type": "dependent"
     },
     {
       "title": "TOKEN WRANGLER 5000",
@@ -33,7 +34,8 @@
           "img": "/associates/rpr.png",
           "url": "https://rockpaperreality.com/"
         }
-      ]
+      ],
+      "type": "dependent"
     },
     {
       "title": "CHRONIC CELLARS PURPLE PARADISE",
@@ -53,7 +55,8 @@
           "img": "/associates/rpr.png",
           "url": "https://rockpaperreality.com/"
         }
-      ]
+      ],
+      "type": "dependent"
     },
     {
       "title": "IMMERSIVE WEB AR PORTAL FOR GLENLIVET",
@@ -67,14 +70,16 @@
           "img": "/associates/rpr.png",
           "url": "https://rockpaperreality.com/"
         }
-      ]
+      ],
+      "type": "dependent"
     },
     {
       "title": "MUSCLE CAR GAME",
       "description": "Welcome to the adrenaline-pumping world of \"Muscle Car Game\" – an electrifying web-based driving game that promises endless excitement and challenges! Take the wheel of an iconic orange muscle car and put your driving skills to the test as you embark on an epic journey down an infinite highway. In \"Muscle Car Game\" players get to control their orange muscle car as it speeds down a multi-lane highway. The objective is simple: survive as long as possible while collecting points along the way. The longer you stay on the road, the higher your score climbs! The game offers intuitive controls suitable for both desktop and mobile devices. Players can easily switch between three lanes by tapping or using arrow keys, making it effortless to maneuver through traffic and avoid obstacles. While cruising down the highway, players must remain vigilant, as the road ahead is filled with challenging obstacles and roadblocks. Dodge and weave through traffic, skillfully maneuver around fallen debris, and stay away from unexpected barriers that could spell disaster for your journey! Unlike traditional games, \"Muscle Car Game\" doesn't have an endpoint. The goal is to achieve the highest score possible by staying on the road and avoiding obstacles for as long as possible. This feature allows players to test their limits and compete against their friends. Immerse yourself in high-octane action with vibrant graphics and dynamic sound effects that complement the fast-paced gameplay. The stunning visuals and adrenaline-pumping soundtrack will keep you hooked for hours on end. Whether at home on your desktop or on the go with your mobile device, \"Orange Muscle Mayhem\" offers seamless gameplay across all platforms. Launch your favorite browser, and you're ready to hit the road and chase high scores wherever you are.",
       "videos": [
         { "url": "carGame/video1.mp4", "poster": "carGame/video1.png" }
-      ]
+      ],
+      "type": "independent"
     }
   ]
 }

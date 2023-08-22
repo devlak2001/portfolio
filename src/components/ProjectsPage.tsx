@@ -142,21 +142,35 @@ export default function ProjectsPage() {
             />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            {project.associates && (
-              <>
-                <a href={project.associates[0].url}>
-                  <img
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/assets/images" +
-                      project.associates[0].img
-                    }
-                    className="badge"
-                    alt=""
-                  />
-                </a>
-              </>
-            )}
+            <div className="badges">
+              {project.associates && (
+                <>
+                  <a href={project.associates[0].url}>
+                    <img
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/assets/images" +
+                        project.associates[0].img
+                      }
+                      className="badge"
+                      alt=""
+                      title={project.associates[0].url}
+                    />
+                  </a>
+                </>
+              )}
+              <img
+                src={
+                  project.type === "dependent"
+                    ? process.env.PUBLIC_URL +
+                      "/assets/images/associates/teamBadge.png"
+                    : process.env.PUBLIC_URL +
+                      "/assets/images/associates/independentBadge.png"
+                }
+                className="badge"
+                alt=""
+              />
+            </div>
 
             <div className="pagination">
               <button

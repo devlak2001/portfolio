@@ -114,6 +114,7 @@ header {
     }
   }
   .rightSide {
+    pointer-events: none;
     z-index: 1;
     position: absolute;
     left: 50%;

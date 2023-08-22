@@ -45,11 +45,15 @@
   }
   h2 {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     font-family: Rustico;
     font-weight: normal;
     font-size: 2.66em;
     margin-bottom: 1.2em;
+    @media (max-width: 980px),
+      (max-width: 980px) and (max-aspect-ratio: 1512 / 982) {
+      margin-bottom: 0.6em;
+    }
   }
   .project {
     z-index: 1;
@@ -88,18 +92,22 @@
           left: 0;
         }
       }
-      .badge {
+      .badges {
+        display: flex;
         position: relative;
-        height: 5em;
-        width: auto;
-        margin-top: 1em;
-        transition: transform 0.35s ease, filter 0.35s ease;
-        pointer-events: all;
-        transform: translateY(-0.125em);
-        filter: drop-shadow(0em 0.25em 0 black);
-        &:hover {
-          transform: translateY(0);
-          filter: drop-shadow(0em 0em 0 black);
+        gap: 1em;
+        .badge {
+          height: 5em;
+          width: auto;
+          margin-top: 1em;
+          transition: transform 0.35s ease, filter 0.35s ease;
+          pointer-events: all;
+          transform: translateY(-0.125em);
+          filter: drop-shadow(0em 0.25em 0 black);
+          &:hover {
+            transform: translateY(0);
+            filter: drop-shadow(0em 0em 0 black);
+          }
         }
       }
       h3 {
@@ -115,6 +123,7 @@
         font-size: 1em;
         overflow-y: scroll;
         padding-right: 1em;
+        padding-bottom: 0.8em;
         scrollbar-color: #f05955 black;
         scrollbar-width: thin;
         box-shadow: inset 0 -7px 9px -7px rgba(0, 0, 0, 0.7);
