@@ -32,6 +32,14 @@ export default function NavBar() {
             src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
             alt=""
             className="logo"
+            onClick={() => {
+              document.querySelector("header")!.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "start",
+              });
+              setMobileState("inactive");
+            }}
           />
           <div className="links">
             <div
@@ -126,6 +134,13 @@ export default function NavBar() {
           />
         </button>
       </nav>
+      <a
+        href={process.env.PUBLIC_URL + "/assets/resume.pdf"}
+        target="_blank"
+        className="viewResume"
+      >
+        <span>View Resume</span>
+      </a>
     </>
   );
 }

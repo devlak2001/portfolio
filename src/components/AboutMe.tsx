@@ -95,11 +95,11 @@ export default function AboutMe() {
           />
           <h2>ABOUT ME</h2>
           <p>
-            Hello, I'm Vladimir Karić, a 22-year-old front-end developer
-            currently pursuing my studies at the prestigious Faculty of
-            Technical Science in Serbia. My passion for web development
-            blossomed during my high school years, and ever since, I have been
-            enamored by the incredible possibilities it offers.
+            Hello, I'm Vladimir Karić, web developer currently pursuing my
+            studies at the prestigious Faculty of Technical Science in Serbia.
+            My passion for web development blossomed during my high school
+            years, and ever since, I have been enamored by the incredible
+            possibilities it offers.
             <br />
             <br />
             What captivates me the most about front-end development is the

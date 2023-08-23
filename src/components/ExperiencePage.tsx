@@ -77,7 +77,21 @@ export default function ExperiencePage() {
               <img
                 src={
                   process.env.PUBLIC_URL +
-                  "/assets/images/ExperiencePage/purina.png"
+                  "/assets/images/ExperiencePage/lenovo.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/rpr.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/atomic.png"
                 }
                 alt=""
               />
@@ -104,6 +118,27 @@ export default function ExperiencePage() {
                 src={
                   process.env.PUBLIC_URL +
                   "/assets/images/ExperiencePage/js.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/ts.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/nodejs.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/jquery.png"
                 }
                 alt=""
               />
@@ -139,6 +174,13 @@ export default function ExperiencePage() {
                 src={
                   process.env.PUBLIC_URL +
                   "/assets/images/ExperiencePage/scss.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/figma.png"
                 }
                 alt=""
               />
