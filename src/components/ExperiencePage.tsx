@@ -63,13 +63,6 @@ export default function ExperiencePage() {
               <img
                 src={
                   process.env.PUBLIC_URL +
-                  "/assets/images/ExperiencePage/prime.png"
-                }
-                alt=""
-              />
-              <img
-                src={
-                  process.env.PUBLIC_URL +
                   "/assets/images/ExperiencePage/redbull.png"
                 }
                 alt=""
@@ -181,6 +174,13 @@ export default function ExperiencePage() {
                 src={
                   process.env.PUBLIC_URL +
                   "/assets/images/ExperiencePage/figma.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/metaSpark.png"
                 }
                 alt=""
               />
