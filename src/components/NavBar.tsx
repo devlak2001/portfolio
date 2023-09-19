@@ -135,7 +135,7 @@ export default function NavBar() {
         </button>
       </nav>
       <a
-        href={process.env.PUBLIC_URL + "/assets/resume.pdf"}
+        href={process.env.PUBLIC_URL + "/assets/Vladimir_Karic_CV.pdf"}
         target="_blank"
         className="viewResume"
       >
