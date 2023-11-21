@@ -213,7 +213,6 @@ export default function HomePage() {
             onClick={async () => {
               const shareData = {
                 url: window.location.href,
-                text: window.location.href,
               };
               try {
                 await navigator.share(shareData);
