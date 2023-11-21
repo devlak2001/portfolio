@@ -1,5 +1,4 @@
 import "../styles/experiencePage.scss";
-import { useEffect, useState, useRef, useMemo } from "react";
 
 export default function ExperiencePage() {
   return (
@@ -88,6 +87,20 @@ export default function ExperiencePage() {
                 }
                 alt=""
               />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/raaleks.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/sunstone.png"
+                }
+                alt=""
+              />
             </div>
           </div>
           <div className="tech">
@@ -145,6 +158,13 @@ export default function ExperiencePage() {
               <img
                 src={
                   process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/nextjs.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
                   "/assets/images/ExperiencePage/git.png"
                 }
                 alt=""
@@ -181,6 +201,13 @@ export default function ExperiencePage() {
                 src={
                   process.env.PUBLIC_URL +
                   "/assets/images/ExperiencePage/metaSpark.png"
+                }
+                alt=""
+              />
+              <img
+                src={
+                  process.env.PUBLIC_URL +
+                  "/assets/images/ExperiencePage/tailwind.png"
                 }
                 alt=""
               />

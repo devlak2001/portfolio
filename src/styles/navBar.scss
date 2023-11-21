@@ -10,7 +10,6 @@ nav {
   z-index: 100;
   background-color: transparent;
   transition: background-color 0.35s ease, height 0.35s ease;
-  backdrop-filter: blur(0);
   font-size: 2.1vh;
   @media (max-aspect-ratio: 1512 / 982) {
     font-size: 1.32vw;

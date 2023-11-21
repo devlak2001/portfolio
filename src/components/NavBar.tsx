@@ -137,6 +137,7 @@ export default function NavBar() {
       <a
         href={process.env.PUBLIC_URL + "/assets/Vladimir_Karic_CV.pdf"}
         target="_blank"
+        rel="noreferrer"
         className="viewResume"
       >
         <span>View Resume</span>
