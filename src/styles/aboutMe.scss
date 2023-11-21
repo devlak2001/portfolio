@@ -1,6 +1,9 @@
 .AboutMe {
   height: 100vh;
   position: relative;
+  @media (max-height: 762px) {
+    height: 59.95vw;
+  }
   @media (max-aspect-ratio: 1512 / 982) {
     height: 64.9vw;
   }
@@ -54,9 +57,10 @@
     text-align: center;
     width: 26.2em;
     font-size: 2.1vh;
-    // @media (max-width: 1512px) {
-    //   font-size: 1.32vw;
-    // }
+    @media (max-height: 762px) {
+      font-size: 1.22vw;
+    }
+
     @media (max-aspect-ratio: 1512 / 982) {
       font-size: 1.32vw;
       @media (max-width: 1100px) {

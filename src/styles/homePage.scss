@@ -2,6 +2,10 @@ header {
   height: 100vh;
   position: relative;
   font-size: 2.1vh;
+  @media (max-height: 762px) {
+    height: 59.95vw;
+    font-size: 1.22vw;
+  }
   @media (max-aspect-ratio: 1512 / 982) {
     height: 64.9vw;
     font-size: 1.32vw;
