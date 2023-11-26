@@ -6,7 +6,6 @@ const bkgMusic = new Audio(
 );
 export default function HomePage() {
   const [speakerOn, setSpeakerOn] = useState(false);
-  const phoneVideo = useRef<HTMLVideoElement>(null);
   useEffect(() => {}, []);
   return (
     <>
@@ -44,7 +43,7 @@ export default function HomePage() {
             className="brush"
           />
           <h1>
-            WEB DEVELOPER
+            VLADIMIR KARIC
             <img
               src={
                 process.env.PUBLIC_URL + "/assets/images/HomePage/katana.png"
@@ -250,7 +249,7 @@ export default function HomePage() {
               <br />
               EXPERIENCE
             </div>
-            <div className="number">5+</div>
+            <div className="number">6+</div>
           </div>
         </div>
       </header>
