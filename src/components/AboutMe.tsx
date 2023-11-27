@@ -137,7 +137,7 @@ export default function AboutMe() {
             As you explore my portfolio website, get ready to embark on a
             captivating journey where technology meets artistry. Experience the
             fusion of stunning visuals, flawless functionality, and my unique
-            creative touch. Together, let's push the limits of what web
+            creative touch. Together, let's push the limits of what software
             development can achieve and inspire others to see the remarkable
             possibilities that lie ahead.
             <br />
