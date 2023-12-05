@@ -61,7 +61,7 @@ export default function HomePage() {
             <h3>SOCIALS:</h3>
             <div className="links">
               <a
-                href="https://www.linkedin.com/in/vladimir-kari%C4%87-0b3534204/"
+                href="https://www.linkedin.com/in/vladimir-karic/"
                 target="_blank"
               >
                 <img
