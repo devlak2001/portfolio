@@ -1,12 +1,11 @@
 import "../styles/homePage.scss";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 
 const bkgMusic = new Audio(
   process.env.PUBLIC_URL + "/assets/audios/bkgMusic.mp3"
 );
 export default function HomePage() {
   const [speakerOn, setSpeakerOn] = useState(false);
-  useEffect(() => {}, []);
   return (
     <>
       <header>
@@ -63,6 +62,7 @@ export default function HomePage() {
               <a
                 href="https://www.linkedin.com/in/vladimir-karic/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src={
@@ -72,7 +72,11 @@ export default function HomePage() {
                   alt=""
                 />
               </a>
-              <a href="https://github.com/devlak2001" target="_blank">
+              <a
+                href="https://github.com/devlak2001"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={
                     process.env.PUBLIC_URL +
@@ -84,6 +88,7 @@ export default function HomePage() {
               <a
                 href="https://www.upwork.com/freelancers/~010f2b5d258ea97993"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src={
