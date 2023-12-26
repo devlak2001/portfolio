@@ -85,19 +85,6 @@ export default function HomePage() {
                   alt=""
                 />
               </a>
-              <a
-                href="https://www.upwork.com/freelancers/~010f2b5d258ea97993"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/assets/images/HomePage/upwork.png"
-                  }
-                  alt=""
-                />
-              </a>
               <a href="mailto: vladimirkaric2001@gmail.com">
                 <img
                   src={
