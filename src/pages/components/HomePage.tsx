@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/homePage.scss";
 import { useState } from "react";
 
-const bkgMusic = new Audio("/audios/bkgMusic.mp3");
+let bkgMusic: any;
 export default function HomePage() {
   const [speakerOn, setSpeakerOn] = useState(false);
+
+  useEffect(() => {
+    bkgMusic = new Audio("/audios/bkgMusic.mp3");
+  }, []);
   return (
     <>
       <header>
