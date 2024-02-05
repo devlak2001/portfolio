@@ -1,52 +1,38 @@
+import React from "react";
 import "../styles/homePage.scss";
 import { useState } from "react";
 
-const bkgMusic = new Audio(
-  process.env.PUBLIC_URL + "/assets/audios/bkgMusic.mp3"
-);
+const bkgMusic = new Audio("/audios/bkgMusic.mp3");
 export default function HomePage() {
   const [speakerOn, setSpeakerOn] = useState(false);
   return (
     <>
       <header>
         <img
-          src={
-            process.env.PUBLIC_URL +
-            "/assets/images/HomePage/backgroundPiece1.png"
-          }
+          src={"/images/HomePage/backgroundPiece1.png"}
           alt=""
           className="backgroundPiece1"
         />
         <img
-          src={
-            process.env.PUBLIC_URL +
-            "/assets/images/HomePage/backgroundPiece2.png"
-          }
+          src={"/images/HomePage/backgroundPiece2.png"}
           alt=""
           className="backgroundPiece2"
         />
         <img
-          src={
-            process.env.PUBLIC_URL +
-            "/assets/images/HomePage/backgroundPiece3.png"
-          }
+          src={"/images/HomePage/backgroundPiece3.png"}
           alt=""
           className="backgroundPiece3"
         />
         <div className="leftSide">
           <img
-            src={
-              process.env.PUBLIC_URL + "/assets/images/HomePage/whiteBrush.png"
-            }
+            src={"/images/HomePage/whiteBrush.png"}
             alt=""
             className="brush"
           />
           <h1>
             VLADIMIR KARIC
             <img
-              src={
-                process.env.PUBLIC_URL + "/assets/images/HomePage/katana.png"
-              }
+              src={"/images/HomePage/katana.png"}
               alt=""
               className="katana"
             />
@@ -64,54 +50,34 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/assets/images/HomePage/linkedin.png"
-                  }
-                  alt=""
-                />
+                <img src={"/images/HomePage/linkedin.png"} alt="" />
               </a>
               <a
                 href="https://github.com/devlak2001"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/assets/images/HomePage/github.png"
-                  }
-                  alt=""
-                />
+                <img src={"/images/HomePage/github.png"} alt="" />
               </a>
               <a href="mailto: vladimirkaric2001@gmail.com">
-                <img
-                  src={
-                    process.env.PUBLIC_URL + "/assets/images/HomePage/gmail.png"
-                  }
-                  alt=""
-                />
+                <img src={"/images/HomePage/gmail.png"} alt="" />
               </a>
             </div>
           </div>
         </div>
         <div className="rightSide">
           <img
-            src={
-              process.env.PUBLIC_URL +
-              "/assets/images/HomePage/keyboardMouse.png"
-            }
+            src={"/images/HomePage/keyboardMouse.png"}
             alt=""
             className="keyboardMouse"
           />
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/HomePage/monitor.png"}
+            src={"/images/HomePage/monitor.png"}
             alt=""
             className="monitor"
           />
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/HomePage/speaker.png"}
+            src={"/images/HomePage/speaker.png"}
             alt=""
             className={`speaker ${speakerOn ? "on" : ""}`}
             onClick={() => {
@@ -182,16 +148,14 @@ export default function HomePage() {
           </svg>
 
           <img
-            src={
-              process.env.PUBLIC_URL + "/assets/images/HomePage/phoneShadow.png"
-            }
+            src={"/images/HomePage/phoneShadow.png"}
             alt=""
             className="phoneShadow"
           />
           {/* <video
             loop={true}
             ref={phoneVideo}
-            src={process.env.PUBLIC_URL + "/assets/videos/homePageVideo.mp4"}
+            src={ "/videos/homePageVideo.mp4"}
           ></video> */}
           <img
             // onClick={() => {
@@ -211,18 +175,14 @@ export default function HomePage() {
                 console.log(err);
               }
             }}
-            src={process.env.PUBLIC_URL + "/assets/images/HomePage/phone.png"}
+            src={"/images/HomePage/phone.png"}
             alt=""
             className="phone"
           />
         </div>
         <div className="bottomSide">
           <div className="numberWrapper">
-            <img
-              src={process.env.PUBLIC_URL + "/assets/images/HomePage/cloud.png"}
-              alt=""
-              className="cloud"
-            />
+            <img src={"/images/HomePage/cloud.png"} alt="" className="cloud" />
             <div className="text">
               HAPPY
               <br />
@@ -231,11 +191,7 @@ export default function HomePage() {
             <div className="number">20+</div>
           </div>
           <div className="numberWrapper">
-            <img
-              src={process.env.PUBLIC_URL + "/assets/images/HomePage/cloud.png"}
-              alt=""
-              className="cloud"
-            />
+            <img src={"/images/HomePage/cloud.png"} alt="" className="cloud" />
             <div className="text">
               YEARS OF
               <br />

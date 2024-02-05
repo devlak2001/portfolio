@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/aboutMe.scss";
 
 export default function AboutMe() {
@@ -5,90 +6,56 @@ export default function AboutMe() {
     <>
       <section className="AboutMe">
         <img
-          src={
-            process.env.PUBLIC_URL +
-            "/assets/images/AboutMe/backgroundPiece1.png"
-          }
+          src={"/images/AboutMe/backgroundPiece1.png"}
           alt=""
           className="backgroundPiece1"
         />
         <img
-          src={
-            process.env.PUBLIC_URL +
-            "/assets/images/AboutMe/backgroundPiece2.png"
-          }
+          src={"/images/AboutMe/backgroundPiece2.png"}
           alt=""
           className="backgroundPiece2"
         />
         <img
-          src={
-            process.env.PUBLIC_URL +
-            "/assets/images/AboutMe/backgroundPiece3.png"
-          }
+          src={"/images/AboutMe/backgroundPiece3.png"}
           alt=""
           className="backgroundPiece3"
         />
         <div className="middle">
+          <img src={"/images/AboutMe/textBkg.png"} alt="" className="textBkg" />
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/AboutMe/textBkg.png"}
-            alt=""
-            className="textBkg"
-          />
-          <img
-            src={
-              process.env.PUBLIC_URL + "/assets/images/AboutMe/japaneseName.png"
-            }
+            src={"/images/AboutMe/japaneseName.png"}
             alt=""
             className="japaneseName"
           />
           <img
-            src={
-              process.env.PUBLIC_URL +
-              "/assets/images/AboutMe/japaneseSurname.png"
-            }
+            src={"/images/AboutMe/japaneseSurname.png"}
             alt=""
             className="japaneseSurname"
           />
           <img
-            src={
-              process.env.PUBLIC_URL + "/assets/images/AboutMe/itemShadow.png"
-            }
+            src={"/images/AboutMe/itemShadow.png"}
             alt=""
             className="shadow1"
           />
+          <img src={"/images/AboutMe/beer.png"} alt="" className="beer" />
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/AboutMe/beer.png"}
-            alt=""
-            className="beer"
-          />
-          <img
-            src={
-              process.env.PUBLIC_URL + "/assets/images/AboutMe/itemShadow.png"
-            }
+            src={"/images/AboutMe/itemShadow.png"}
             alt=""
             className="shadow2"
           />
+          <img src={"/images/AboutMe/popcorn.png"} alt="" className="popcorn" />
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/AboutMe/popcorn.png"}
-            alt=""
-            className="popcorn"
-          />
-          <img
-            src={
-              process.env.PUBLIC_URL + "/assets/images/AboutMe/itemShadow.png"
-            }
+            src={"/images/AboutMe/itemShadow.png"}
             alt=""
             className="shadow3"
           />
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/AboutMe/joystick.png"}
+            src={"/images/AboutMe/joystick.png"}
             alt=""
             className="joystick"
           />
           <img
-            src={
-              process.env.PUBLIC_URL + "/assets/images/AboutMe/signature.png"
-            }
+            src={"/images/AboutMe/signature.png"}
             alt=""
             className="signature"
           />
@@ -152,13 +119,7 @@ export default function AboutMe() {
               });
             }}
           >
-            <img
-              src={
-                process.env.PUBLIC_URL + "/assets/images/AboutMe/buttonBkg.png"
-              }
-              alt=""
-              className="bkg"
-            />
+            <img src={"/images/AboutMe/buttonBkg.png"} alt="" className="bkg" />
             <span>MY PROJECTS</span>
           </button>
         </div>

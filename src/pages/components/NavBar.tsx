@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import "../styles/navBar.scss";
 
@@ -29,7 +30,7 @@ export default function NavBar() {
       <nav className={`${stick ? "stick" : ""} ${mobileState}`}>
         <div className="inner">
           <img
-            src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+            src={"/images/logo.png"}
             alt=""
             className="logo"
             onClick={() => {
@@ -54,9 +55,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={
-                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
-                }
+                src={"/images/NavBar/linkBrush.png"}
                 alt=""
                 className="brush"
               />
@@ -75,9 +74,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={
-                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
-                }
+                src={"/images/NavBar/linkBrush.png"}
                 alt=""
                 className="brush"
               />
@@ -96,9 +93,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={
-                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
-                }
+                src={"/images/NavBar/linkBrush.png"}
                 alt=""
                 className="brush"
               />
@@ -108,7 +103,7 @@ export default function NavBar() {
             {/* <div className="link">
               <img
                 src={
-                  process.env.PUBLIC_URL + "/assets/images/NavBar/linkBrush.png"
+                   "/images/NavBar/linkBrush.png"
                 }
                 alt=""
                 className="brush"
@@ -128,14 +123,11 @@ export default function NavBar() {
             }
           }}
         >
-          <img
-            src={process.env.PUBLIC_URL + "/assets/images/NavBar/hamburger.png"}
-            alt=""
-          />
+          <img src={"/images/NavBar/hamburger.png"} alt="" />
         </button>
       </nav>
       <a
-        href={process.env.PUBLIC_URL + "/assets/Vladimir_Karic_CV.pdf"}
+        href={"/Vladimir_Karic_CV.pdf"}
         target="_blank"
         rel="noreferrer"
         className="viewResume"
