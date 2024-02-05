@@ -187,12 +187,12 @@ export default function ProjectsPage() {
                         playsInline={true}
                         src={
                           index === currentProjectAsset
-                            ? "/videos/" + el.url
+                            ? "./videos/" + el.url
                             : ""
                         }
                         poster={
                           index === currentProjectAsset
-                            ? "/videos/" + el.poster
+                            ? "./videos/" + el.poster
                             : ""
                         }
                       ></video>

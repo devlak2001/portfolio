@@ -7,7 +7,7 @@ export default function HomePage() {
   const [speakerOn, setSpeakerOn] = useState(false);
 
   useEffect(() => {
-    bkgMusic = new Audio("/audios/bkgMusic.mp3");
+    bkgMusic = new Audio("./audios/bkgMusic.mp3");
   }, []);
   return (
     <>
