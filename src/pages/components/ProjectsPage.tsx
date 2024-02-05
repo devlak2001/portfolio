@@ -22,7 +22,7 @@ const pagination = (
           setCurrentProjectAsset(0);
         }}
       >
-        <img src={"/images/ProjectsPage/numberBkg.png"} alt="" />
+        <img src={"./images/ProjectsPage/numberBkg.png"} alt="" />
         <span>{i + 1}</span>
       </div>
     );
@@ -111,12 +111,12 @@ export default function ProjectsPage() {
     <>
       <section className="ProjectsPage">
         <img
-          src={"/images/ProjectsPage/backgroundPiece1.png"}
+          src={"./images/ProjectsPage/backgroundPiece1.png"}
           alt=""
           className="backgroundPiece1"
         />
         <img
-          src={"/images/ProjectsPage/backgroundPiece2.png"}
+          src={"./images/ProjectsPage/backgroundPiece2.png"}
           alt=""
           className="backgroundPiece2"
         />
@@ -132,7 +132,7 @@ export default function ProjectsPage() {
             >
               <div className="leftSide">
                 <img
-                  src={"/images/ProjectsPage/whiteBrush.png"}
+                  src={"./images/ProjectsPage/whiteBrush.png"}
                   alt=""
                   className="brush"
                 />
@@ -143,7 +143,7 @@ export default function ProjectsPage() {
                     <>
                       <a href={el.associates[0].url}>
                         <img
-                          src={"/images" + el.associates[0].img}
+                          src={"./images" + el.associates[0].img}
                           className="badge"
                           alt=""
                           title={el.associates[0].url}
@@ -154,8 +154,8 @@ export default function ProjectsPage() {
                   <img
                     src={
                       el.type === "dependent"
-                        ? "/images/associates/teamBadge.png"
-                        : "/images/associates/independentBadge.png"
+                        ? "./images/associates/teamBadge.png"
+                        : "./images/associates/independentBadge.png"
                     }
                     className="badge"
                     alt=""
@@ -212,7 +212,7 @@ export default function ProjectsPage() {
                     }
                   }}
                 >
-                  <img src={"/images/ProjectsPage/arrowLeft.png"} alt="" />
+                  <img src={"./images/ProjectsPage/arrowLeft.png"} alt="" />
                 </button>
                 <button
                   className="next"
@@ -224,15 +224,15 @@ export default function ProjectsPage() {
                     }
                   }}
                 >
-                  <img src={"/images/ProjectsPage/arrowRight.png"} alt="" />
+                  <img src={"./images/ProjectsPage/arrowRight.png"} alt="" />
                 </button>
                 <div className="number">
-                  <img src={"/images/ProjectsPage/buttonBkg.png"} alt="" />
+                  <img src={"./images/ProjectsPage/buttonBkg.png"} alt="" />
                   <span>{currentProjectAsset + 1}</span>/
                   <span>{el.videos.length}</span>
                 </div>
                 <img
-                  src={"/images/ProjectsPage/projectGallery.png"}
+                  src={"./images/ProjectsPage/projectGallery.png"}
                   alt=""
                   className="title"
                 />
@@ -253,7 +253,7 @@ export default function ProjectsPage() {
               }
             }}
           >
-            <img src={"/images/ProjectsPage/arrowLeft2.png"} alt="" />
+            <img src={"./images/ProjectsPage/arrowLeft2.png"} alt="" />
           </button>
           <div className="numbers">
             {pagination(
@@ -274,7 +274,7 @@ export default function ProjectsPage() {
               }
             }}
           >
-            <img src={"/images/ProjectsPage/arrowRight2.png"} alt="" />
+            <img src={"./images/ProjectsPage/arrowRight2.png"} alt="" />
           </button>
         </div>
       </section>

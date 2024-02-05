@@ -30,7 +30,7 @@ export default function NavBar() {
       <nav className={`${stick ? "stick" : ""} ${mobileState}`}>
         <div className="inner">
           <img
-            src={"/images/logo.png"}
+            src={"./images/logo.png"}
             alt=""
             className="logo"
             onClick={() => {
@@ -55,7 +55,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={"/images/NavBar/linkBrush.png"}
+                src={"./images/NavBar/linkBrush.png"}
                 alt=""
                 className="brush"
               />
@@ -74,7 +74,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={"/images/NavBar/linkBrush.png"}
+                src={"./images/NavBar/linkBrush.png"}
                 alt=""
                 className="brush"
               />
@@ -93,7 +93,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={"/images/NavBar/linkBrush.png"}
+                src={"./images/NavBar/linkBrush.png"}
                 alt=""
                 className="brush"
               />
@@ -103,7 +103,7 @@ export default function NavBar() {
             {/* <div className="link">
               <img
                 src={
-                   "/images/NavBar/linkBrush.png"
+                   "./images/NavBar/linkBrush.png"
                 }
                 alt=""
                 className="brush"
@@ -123,7 +123,7 @@ export default function NavBar() {
             }
           }}
         >
-          <img src={"/images/NavBar/hamburger.png"} alt="" />
+          <img src={"./images/NavBar/hamburger.png"} alt="" />
         </button>
       </nav>
       <a
