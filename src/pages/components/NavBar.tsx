@@ -127,7 +127,7 @@ export default function NavBar() {
         </button>
       </nav>
       <a
-        href={"/Vladimir_Karic_CV.pdf"}
+        href={"./Vladimir_Karic_CV.pdf"}
         target="_blank"
         rel="noreferrer"
         className="viewResume"
