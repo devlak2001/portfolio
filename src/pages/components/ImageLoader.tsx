@@ -7,7 +7,7 @@ const ImageLoader = () => {
   const [hideLoader, setHideLoader] = useState<boolean>(false);
   const [removeLoader, setRemoveLoader] = useState<boolean>(false);
   useEffect(() => {
-    const images = Array.from(document.querySelectorAll("img")).map(
+    const images = Array.from(document.querySelectorAll("header img")).map(
       (img) => (img as HTMLImageElement).src
     );
 

@@ -68,6 +68,28 @@ export const Head: HeadFC = () => {
         content="Vladimir Karić | Software Developer Portfolio"
       />
 
+      <link
+        rel="preload"
+        href={"./fonts/Rustico-Regular.otf"}
+        as="font"
+        type="font/otf"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href={"./fonts/Consolas.woff2"}
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href={"./fonts/ConsolasBold.woff2"}
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+
       <title>Vladimir Karić | Software Developer Portfolio</title>
     </>
   );
