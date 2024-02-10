@@ -28,15 +28,11 @@ const IndexPage: React.FC<PageProps> = () => {
       <ImageLoader setHomePageLoaded={setHomePageLoaded} />
       <NavBar />
       <HomePage />
-      {homePageLoaded && (
-        <>
-          <main>
-            <AboutMe />
-            <ProjectsPage />
-            <ExperiencePage />
-          </main>
-        </>
-      )}
+      <main>
+        <AboutMe />
+        <ProjectsPage />
+        <ExperiencePage />
+      </main>
     </div>
   );
 };
