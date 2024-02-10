@@ -123,13 +123,16 @@ export default function ProjectsPage() {
           loading="lazy"
         />
         <div className="projectsWrapper">
-          {projects.map((el, index) => (
+          {projects.map((el, projectIndex) => (
             <div
-              key={index}
+              key={projectIndex}
               className="project"
               style={{
-                transform: `translateX(${(index - currentProject) * 100}vw)`,
-                position: currentProject === index ? "relative" : "absolute",
+                transform: `translateX(${
+                  (projectIndex - currentProject) * 100
+                }vw)`,
+                position:
+                  currentProject === projectIndex ? "relative" : "absolute",
               }}
             >
               <div className="leftSide">
@@ -190,12 +193,14 @@ export default function ProjectsPage() {
                         }}
                         playsInline={true}
                         src={
-                          index === currentProjectAsset
+                          index === currentProjectAsset &&
+                          projectIndex == currentProject
                             ? "./videos/" + el.url
                             : ""
                         }
                         poster={
-                          index === currentProjectAsset
+                          index === currentProjectAsset &&
+                          projectIndex == currentProject
                             ? "./videos/" + el.poster
                             : ""
                         }

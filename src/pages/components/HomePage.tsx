@@ -5,10 +5,23 @@ import { useState } from "react";
 let bkgMusic: any;
 export default function HomePage() {
   const [speakerOn, setSpeakerOn] = useState(false);
+  const [loadAudio, setLoadAudio] = useState(false);
 
   useEffect(() => {
-    bkgMusic = new Audio("./audios/bkgMusic.mp3");
-  }, []);
+    if (loadAudio) {
+      bkgMusic = new Audio("./audios/bkgMusic.mp3");
+    }
+  }, [loadAudio]);
+
+  useEffect(() => {
+    if (bkgMusic) {
+      if (speakerOn) {
+        bkgMusic.play();
+      } else {
+        bkgMusic.pause();
+      }
+    }
+  }, [speakerOn]);
   return (
     <>
       <header>
@@ -94,12 +107,8 @@ export default function HomePage() {
             alt=""
             className={`speaker ${speakerOn ? "on" : ""}`}
             onClick={() => {
+              setLoadAudio(true);
               setSpeakerOn(!speakerOn);
-              if (bkgMusic.paused) {
-                bkgMusic.play();
-              } else {
-                bkgMusic.pause();
-              }
             }}
           />
           <svg
