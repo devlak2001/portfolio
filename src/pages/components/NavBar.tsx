@@ -30,7 +30,7 @@ export default function NavBar() {
       <nav className={`${stick ? "stick" : ""} ${mobileState}`}>
         <div className="inner">
           <img
-            src={"./images/logo.png"}
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/logo.png"
             alt=""
             className="logo"
             onClick={() => {
@@ -55,7 +55,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={"./images/NavBar/linkBrush.png"}
+                src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
                 alt=""
                 className="brush"
               />
@@ -74,7 +74,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={"./images/NavBar/linkBrush.png"}
+                src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
                 alt=""
                 className="brush"
               />
@@ -93,7 +93,7 @@ export default function NavBar() {
               }}
             >
               <img
-                src={"./images/NavBar/linkBrush.png"}
+                src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
                 alt=""
                 className="brush"
               />
@@ -123,11 +123,14 @@ export default function NavBar() {
             }
           }}
         >
-          <img src={"./images/NavBar/hamburger.png"} alt="" />
+          <img
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/hamburger.png"
+            alt=""
+          />
         </button>
       </nav>
       <a
-        href={"./Vladimir_Karic_CV.pdf"}
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/Vladimir_Karic_CV.pdf"
         target="_blank"
         rel="noreferrer"
         className="viewResume"

@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .App {
-  background-image: url("./../../../static/images/noise.png");
+  background-image: url("https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/noise.png");
   background-position: center;
   background-repeat: repeat;
   overflow: hidden;
@@ -169,15 +169,15 @@ a {
 
 @font-face {
   font-family: Rustico;
-  src: url("./../../../static/fonts/Rustico-Regular.otf");
+  src: url("https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Rustico-Regular.otf");
 }
 
 @font-face {
   font-family: Consolas;
-  src: url("./../../../static/fonts/Consolas.woff2");
+  src: url("https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Consolas.woff2");
 }
 
 @font-face {
   font-family: ConsolasBold;
-  src: url("./../../../static/fonts/ConsolasBold.woff2");
+  src: url("https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/ConsolasBold.woff2");
 }

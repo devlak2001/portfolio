@@ -13,30 +13,30 @@ export default function HomePage() {
     <>
       <header>
         <img
-          src={"./images/HomePage/backgroundPiece1.png"}
+          src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece1.png"
           alt=""
           className="backgroundPiece1"
         />
         <img
-          src={"./images/HomePage/backgroundPiece2.png"}
+          src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece2.png"
           alt=""
           className="backgroundPiece2"
         />
         <img
-          src={"./images/HomePage/backgroundPiece3.png"}
+          src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece3.png"
           alt=""
           className="backgroundPiece3"
         />
         <div className="leftSide">
           <img
-            src={"./images/HomePage/whiteBrush.png"}
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/whiteBrush.png"
             alt=""
             className="brush"
           />
           <h1>
             VLADIMIR KARIC
             <img
-              src={"./images/HomePage/katana.png"}
+              src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/katana.png"
               alt=""
               className="katana"
             />
@@ -54,34 +54,43 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={"./images/HomePage/linkedin.png"} alt="" />
+                <img
+                  src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/linkedin.png"
+                  alt=""
+                />
               </a>
               <a
                 href="https://github.com/devlak2001"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={"./images/HomePage/github.png"} alt="" />
+                <img
+                  src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/github.png"
+                  alt=""
+                />
               </a>
               <a href="mailto: vladimirkaric2001@gmail.com">
-                <img src={"./images/HomePage/gmail.png"} alt="" />
+                <img
+                  src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/gmail.png"
+                  alt=""
+                />
               </a>
             </div>
           </div>
         </div>
         <div className="rightSide">
           <img
-            src={"./images/HomePage/keyboardMouse.png"}
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/keyboardMouse.png"
             alt=""
             className="keyboardMouse"
           />
           <img
-            src={"./images/HomePage/monitor.png"}
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/monitor.png"
             alt=""
             className="monitor"
           />
           <img
-            src={"./images/HomePage/speaker.png"}
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/speaker.png"
             alt=""
             className={`speaker ${speakerOn ? "on" : ""}`}
             onClick={() => {
@@ -152,7 +161,7 @@ export default function HomePage() {
           </svg>
 
           <img
-            src={"./images/HomePage/phoneShadow.png"}
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phoneShadow.png"
             alt=""
             className="phoneShadow"
           />
@@ -179,14 +188,18 @@ export default function HomePage() {
                 console.log(err);
               }
             }}
-            src={"./images/HomePage/phone.png"}
+            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phone.png"
             alt=""
             className="phone"
           />
         </div>
         <div className="bottomSide">
           <div className="numberWrapper">
-            <img src={"./images/HomePage/cloud.png"} alt="" className="cloud" />
+            <img
+              src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
+              alt=""
+              className="cloud"
+            />
             <div className="text">
               HAPPY
               <br />
@@ -195,7 +208,11 @@ export default function HomePage() {
             <div className="number">20+</div>
           </div>
           <div className="numberWrapper">
-            <img src={"./images/HomePage/cloud.png"} alt="" className="cloud" />
+            <img
+              src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
+              alt=""
+              className="cloud"
+            />
             <div className="text">
               YEARS OF
               <br />
