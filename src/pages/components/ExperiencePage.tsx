@@ -9,47 +9,153 @@ export default function ExperiencePage() {
           src={"./images/ExperiencePage/backgroundPiece1.png"}
           alt=""
           className="backgroundPiece1"
+          loading="lazy"
         />
         <img
           src={"./images/ExperiencePage/backgroundPiece2.png"}
           alt=""
           className="backgroundPiece2"
+          loading="lazy"
         />
         <div className="contentWrapper">
           <div className="clients">
             <h2>CLIENTS</h2>
             <div className="logos">
-              <img src={"./images/ExperiencePage/microsoft.png"} alt="" />
-              <img src={"./images/ExperiencePage/intel.png"} alt="" />
-              <img src={"./images/ExperiencePage/chronicCellars.png"} alt="" />
-              <img src={"./images/ExperiencePage/glenlivet.png"} alt="" />
-              <img src={"./images/ExperiencePage/corona.png"} alt="" />
-              <img src={"./images/ExperiencePage/redbull.png"} alt="" />
-              <img src={"./images/ExperiencePage/lenovo.png"} alt="" />
-              <img src={"./images/ExperiencePage/rpr.png"} alt="" />
-              <img src={"./images/ExperiencePage/atomic.png"} alt="" />
-              <img src={"./images/ExperiencePage/raaleks.png"} alt="" />
-              <img src={"./images/ExperiencePage/sunstone.png"} alt="" />
+              <img
+                src={"./images/ExperiencePage/microsoft.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/intel.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/chronicCellars.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/glenlivet.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/corona.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/redbull.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/lenovo.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/rpr.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/atomic.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/raaleks.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/sunstone.png"}
+                alt=""
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="tech">
             <h2>TECHNOLOGIES</h2>
             <div className="logos">
-              <img src={"./images/ExperiencePage/html.png"} alt="" />
-              <img src={"./images/ExperiencePage/css.png"} alt="" />
-              <img src={"./images/ExperiencePage/js.png"} alt="" />
-              <img src={"./images/ExperiencePage/ts.png"} alt="" />
-              <img src={"./images/ExperiencePage/nodejs.png"} alt="" />
-              <img src={"./images/ExperiencePage/jquery.png"} alt="" />
-              <img src={"./images/ExperiencePage/react.png"} alt="" />
-              <img src={"./images/ExperiencePage/nextjs.png"} alt="" />
-              <img src={"./images/ExperiencePage/git.png"} alt="" />
-              <img src={"./images/ExperiencePage/threejs.png"} alt="" />
-              <img src={"./images/ExperiencePage/npm.png"} alt="" />
-              <img src={"./images/ExperiencePage/scss.png"} alt="" />
-              <img src={"./images/ExperiencePage/figma.png"} alt="" />
-              <img src={"./images/ExperiencePage/metaSpark.png"} alt="" />
-              <img src={"./images/ExperiencePage/tailwind.png"} alt="" />
+              <img
+                src={"./images/ExperiencePage/html.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/css.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/js.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/ts.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/nodejs.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/jquery.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/react.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/nextjs.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/git.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/threejs.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/npm.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/scss.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/figma.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/metaSpark.png"}
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src={"./images/ExperiencePage/tailwind.png"}
+                alt=""
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

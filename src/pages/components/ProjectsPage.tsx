@@ -114,11 +114,13 @@ export default function ProjectsPage() {
           src={"./images/ProjectsPage/backgroundPiece1.png"}
           alt=""
           className="backgroundPiece1"
+          loading="lazy"
         />
         <img
           src={"./images/ProjectsPage/backgroundPiece2.png"}
           alt=""
           className="backgroundPiece2"
+          loading="lazy"
         />
         <div className="projectsWrapper">
           {projects.map((el, index) => (
@@ -135,6 +137,7 @@ export default function ProjectsPage() {
                   src={"./images/ProjectsPage/whiteBrush.png"}
                   alt=""
                   className="brush"
+                  loading="lazy"
                 />
                 <h3>{el.title}</h3>
                 <p dangerouslySetInnerHTML={{ __html: el.description }}></p>
@@ -159,6 +162,7 @@ export default function ProjectsPage() {
                     }
                     className="badge"
                     alt=""
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -212,7 +216,11 @@ export default function ProjectsPage() {
                     }
                   }}
                 >
-                  <img src={"./images/ProjectsPage/arrowLeft.png"} alt="" />
+                  <img
+                    src={"./images/ProjectsPage/arrowLeft.png"}
+                    alt=""
+                    loading="lazy"
+                  />
                 </button>
                 <button
                   className="next"
@@ -224,10 +232,18 @@ export default function ProjectsPage() {
                     }
                   }}
                 >
-                  <img src={"./images/ProjectsPage/arrowRight.png"} alt="" />
+                  <img
+                    src={"./images/ProjectsPage/arrowRight.png"}
+                    alt=""
+                    loading="lazy"
+                  />
                 </button>
                 <div className="number">
-                  <img src={"./images/ProjectsPage/buttonBkg.png"} alt="" />
+                  <img
+                    src={"./images/ProjectsPage/buttonBkg.png"}
+                    alt=""
+                    loading="lazy"
+                  />
                   <span>{currentProjectAsset + 1}</span>/
                   <span>{el.videos.length}</span>
                 </div>
@@ -235,6 +251,7 @@ export default function ProjectsPage() {
                   src={"./images/ProjectsPage/projectGallery.png"}
                   alt=""
                   className="title"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -253,7 +270,11 @@ export default function ProjectsPage() {
               }
             }}
           >
-            <img src={"./images/ProjectsPage/arrowLeft2.png"} alt="" />
+            <img
+              src={"./images/ProjectsPage/arrowLeft2.png"}
+              alt=""
+              loading="lazy"
+            />
           </button>
           <div className="numbers">
             {pagination(
@@ -274,7 +295,11 @@ export default function ProjectsPage() {
               }
             }}
           >
-            <img src={"./images/ProjectsPage/arrowRight2.png"} alt="" />
+            <img
+              src={"./images/ProjectsPage/arrowRight2.png"}
+              alt=""
+              loading="lazy"
+            />
           </button>
         </div>
       </section>

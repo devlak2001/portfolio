@@ -82,6 +82,77 @@ export const Head: HeadFC = () => {
 
       <link
         rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece1.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece2.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece3.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/whiteBrush.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/katana.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/linkedin.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/github.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/gmail.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/keyboardMouse.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/monitor.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/speaker.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phoneShadow.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phone.png"
+        as="image"
+      />
+      <link
+        rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
+        as="image"
+      />
+
+      <link
+        rel="preload"
         href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Rustico-Regular.otf"
         as="font"
         type="font/otf"

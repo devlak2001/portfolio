@@ -9,63 +9,80 @@ export default function AboutMe() {
           src={"./images/AboutMe/backgroundPiece1.png"}
           alt=""
           className="backgroundPiece1"
+          loading="lazy"
         />
         <img
           src={"./images/AboutMe/backgroundPiece2.png"}
           alt=""
           className="backgroundPiece2"
+          loading="lazy"
         />
         <img
           src={"./images/AboutMe/backgroundPiece3.png"}
           alt=""
           className="backgroundPiece3"
+          loading="lazy"
         />
         <div className="middle">
           <img
             src={"./images/AboutMe/textBkg.png"}
             alt=""
             className="textBkg"
+            loading="lazy"
           />
           <img
             src={"./images/AboutMe/japaneseName.png"}
             alt=""
             className="japaneseName"
+            loading="lazy"
           />
           <img
             src={"./images/AboutMe/japaneseSurname.png"}
             alt=""
             className="japaneseSurname"
+            loading="lazy"
           />
           <img
             src={"./images/AboutMe/itemShadow.png"}
             alt=""
             className="shadow1"
+            loading="lazy"
           />
-          <img src={"./images/AboutMe/beer.png"} alt="" className="beer" />
+          <img
+            src={"./images/AboutMe/beer.png"}
+            alt=""
+            className="beer"
+            loading="lazy"
+          />
           <img
             src={"./images/AboutMe/itemShadow.png"}
             alt=""
             className="shadow2"
+            loading="lazy"
           />
           <img
             src={"./images/AboutMe/popcorn.png"}
             alt=""
             className="popcorn"
+            loading="lazy"
           />
           <img
             src={"./images/AboutMe/itemShadow.png"}
             alt=""
             className="shadow3"
+            loading="lazy"
           />
           <img
             src={"./images/AboutMe/joystick.png"}
             alt=""
             className="joystick"
+            loading="lazy"
           />
           <img
             src={"./images/AboutMe/signature.png"}
             alt=""
             className="signature"
+            loading="lazy"
           />
           <h2>ABOUT ME</h2>
           <p>
@@ -131,6 +148,7 @@ export default function AboutMe() {
               src={"./images/AboutMe/buttonBkg.png"}
               alt=""
               className="bkg"
+              loading="lazy"
             />
             <span>MY PROJECTS</span>
           </button>
