@@ -1,5 +1,5 @@
 import type { HeadFC, PageProps } from "gatsby";
-import React from "react";
+import React, { useState } from "react";
 
 import AboutMe from "./components/AboutMe";
 import HomePage from "./components/HomePage";
@@ -12,14 +12,19 @@ import ExperiencePage from "./components/ExperiencePage";
 import "./styles/index.scss";
 
 const IndexPage: React.FC<PageProps> = () => {
+  const [homePageLoaded, setHomePageLoaded] = useState(false);
   return (
     <div className="App">
-      <ImageLoader />
+      <ImageLoader setHomePageLoaded={setHomePageLoaded} />
       <NavBar />
       <HomePage />
-      <AboutMe />
-      <ProjectsPage />
-      <ExperiencePage />
+      {homePageLoaded && (
+        <>
+          <AboutMe />
+          <ProjectsPage />
+          <ExperiencePage />
+        </>
+      )}
     </div>
   );
 };

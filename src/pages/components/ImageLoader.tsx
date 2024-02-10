@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-const ImageLoader = () => {
+const ImageLoader = ({ setHomePageLoaded }: any) => {
   const [allLoaded, setAllLoaded] = useState<boolean>(false);
   const [minTimePassed, setMinTimePassed] = useState<boolean>(false);
   const [hideLoader, setHideLoader] = useState<boolean>(false);
@@ -27,6 +27,7 @@ const ImageLoader = () => {
       try {
         await Promise.all(images.map((img) => loadImage(img)));
         // console.log("All images have loaded!");
+        setHomePageLoaded(true);
         setAllLoaded(true);
         // Perform your desired action here
       } catch (err) {
