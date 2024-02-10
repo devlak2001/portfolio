@@ -36,6 +36,9 @@
     height: 99%;
     opacity: 0.2;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .backgroundPiece2 {
     position: absolute;
@@ -46,6 +49,9 @@
     height: 135.3%;
     opacity: 1;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   h2 {
     position: relative;
@@ -92,7 +98,7 @@
         flex-direction: column;
         align-items: center;
         max-width: 26.2em;
-        max-height: 24em;
+        max-height: 22em;
         height: unset;
         @media (max-width: 720px) {
           width: calc(100% - 40px);

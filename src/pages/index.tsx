@@ -20,9 +20,11 @@ const IndexPage: React.FC<PageProps> = () => {
       <HomePage />
       {homePageLoaded && (
         <>
-          <AboutMe />
-          <ProjectsPage />
-          <ExperiencePage />
+          <main>
+            <AboutMe />
+            <ProjectsPage />
+            <ExperiencePage />
+          </main>
         </>
       )}
     </div>

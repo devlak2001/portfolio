@@ -27,6 +27,9 @@ header {
     height: 85.25%;
     opacity: 0.35;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .backgroundPiece2 {
     position: absolute;
@@ -36,6 +39,9 @@ header {
     width: auto;
     height: 68.2%;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .backgroundPiece3 {
     position: absolute;
@@ -46,6 +52,9 @@ header {
     mix-blend-mode: color-burn;
     width: auto;
     height: 127%;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .leftSide {
     z-index: 1;

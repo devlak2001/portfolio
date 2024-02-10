@@ -23,6 +23,9 @@
     height: 96.6%;
     opacity: 0.35;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .backgroundPiece2 {
     position: absolute;
@@ -33,6 +36,9 @@
     height: 131%;
     opacity: 0.15;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .backgroundPiece3 {
     position: absolute;
@@ -44,6 +50,9 @@
     opacity: 0.4;
     z-index: -1;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .middle {
     z-index: 1;
@@ -79,6 +88,9 @@
       @media (max-width: 720px) {
         width: calc(100% - 40px);
         max-width: 420px;
+        @media (max-width: 420px) {
+          margin-bottom: 45vw;
+        }
       }
     }
     .japaneseSurname,
@@ -139,7 +151,7 @@
       }
 
       @media (max-width: 720px) {
-        top: 165%;
+        top: 160%;
         left: 5%;
         @media (max-width: 420px) {
           top: calc(100% + 40vw);
@@ -153,7 +165,7 @@
       animation: joystickShadowMoving 3s ease infinite;
 
       @media (max-width: 720px) {
-        top: 165%;
+        top: 160%;
         left: 40%;
         @media (max-width: 420px) {
           top: calc(100% + 38vw);
@@ -178,7 +190,7 @@
       top: 140%;
       animation: joystickShadowMoving 3s ease infinite;
       @media (max-width: 720px) {
-        top: 161%;
+        top: 156%;
         left: 68%;
         @media (max-width: 420px) {
           top: calc(100% + 38vw);

@@ -37,6 +37,9 @@
     height: 67.6%;
     opacity: 0.5;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .backgroundPiece2 {
     position: absolute;
@@ -47,6 +50,9 @@
     height: 18.92%;
     opacity: 0.5;
     mix-blend-mode: color-burn;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   .contentWrapper {
     position: relative;
