@@ -6,81 +6,81 @@ export default function AboutMe() {
     <>
       <section className="AboutMe">
         <img
-          src={"./images/AboutMe/backgroundPiece1.png"}
-          alt=""
+          data-img-src={"./images/AboutMe/backgroundPiece1.png"}
+          alt="Background Piece"
           className="backgroundPiece1"
           loading="lazy"
         />
         <img
-          src={"./images/AboutMe/backgroundPiece2.png"}
-          alt=""
+          data-img-src={"./images/AboutMe/backgroundPiece2.png"}
+          alt="Background Piece"
           className="backgroundPiece2"
           loading="lazy"
         />
         <img
-          src={"./images/AboutMe/backgroundPiece3.png"}
-          alt=""
+          data-img-src={"./images/AboutMe/backgroundPiece3.png"}
+          alt="Background Piece"
           className="backgroundPiece3"
           loading="lazy"
         />
         <div className="middle">
           <img
-            src={"./images/AboutMe/textBkg.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/textBkg.png"}
+            alt="Text Background"
             className="textBkg"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/japaneseName.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/japaneseName.png"}
+            alt="Japanese Name"
             className="japaneseName"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/japaneseSurname.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/japaneseSurname.png"}
+            alt="Japanese Surname"
             className="japaneseSurname"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/itemShadow.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/itemShadow.png"}
+            alt="Shadow"
             className="shadow1"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/beer.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/beer.png"}
+            alt="Beer"
             className="beer"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/itemShadow.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/itemShadow.png"}
+            alt="Shadow"
             className="shadow2"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/popcorn.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/popcorn.png"}
+            alt="Popcorn"
             className="popcorn"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/itemShadow.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/itemShadow.png"}
+            alt="Shadow"
             className="shadow3"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/joystick.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/joystick.png"}
+            alt="Joystick"
             className="joystick"
             loading="lazy"
           />
           <img
-            src={"./images/AboutMe/signature.png"}
-            alt=""
+            data-img-src={"./images/AboutMe/signature.png"}
+            alt="Signature"
             className="signature"
             loading="lazy"
           />
@@ -145,8 +145,8 @@ export default function AboutMe() {
             }}
           >
             <img
-              src={"./images/AboutMe/buttonBkg.png"}
-              alt=""
+              data-img-src={"./images/AboutMe/buttonBkg.png"}
+              alt="Button Background"
               className="bkg"
               loading="lazy"
             />

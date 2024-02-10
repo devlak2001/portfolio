@@ -1,5 +1,5 @@
 import type { HeadFC, PageProps } from "gatsby";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import AboutMe from "./components/AboutMe";
 import HomePage from "./components/HomePage";
@@ -13,6 +13,16 @@ import "./styles/index.scss";
 
 const IndexPage: React.FC<PageProps> = () => {
   const [homePageLoaded, setHomePageLoaded] = useState(false);
+
+  useEffect(() => {
+    if (homePageLoaded) {
+      Array.from(document.querySelectorAll("main img, main video")).forEach(
+        (img: any) => {
+          img.src = img.dataset.imgSrc;
+        }
+      );
+    }
+  }, [homePageLoaded]);
   return (
     <div className="App">
       <ImageLoader setHomePageLoaded={setHomePageLoaded} />
@@ -89,72 +99,7 @@ export const Head: HeadFC = () => {
 
       <link
         rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece1.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece2.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece3.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/whiteBrush.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/katana.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/linkedin.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/github.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/gmail.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/keyboardMouse.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/monitor.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/speaker.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phoneShadow.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phone.png"
-        as="image"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
+        href="./images/AboutMe/backgroundPiece3.png"
         as="image"
       />
 

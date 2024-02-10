@@ -27,30 +27,30 @@ export default function HomePage() {
       <header>
         <img
           src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece1.png"
-          alt=""
+          alt="Background Piece"
           className="backgroundPiece1"
         />
         <img
           src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece2.png"
-          alt=""
+          alt="Background Piece"
           className="backgroundPiece2"
         />
         <img
           src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece3.png"
-          alt=""
+          alt="Background Piece"
           className="backgroundPiece3"
         />
         <div className="leftSide">
           <img
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/whiteBrush.png"
-            alt=""
+            alt="White Brush stroke"
             className="brush"
           />
           <h1>
             VLADIMIR KARIC
             <img
               src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/katana.png"
-              alt=""
+              alt="Katana"
               className="katana"
             />
           </h1>
@@ -60,7 +60,7 @@ export default function HomePage() {
             Redefining Boundaries!
           </p>
           <div className="socials">
-            <h3>SOCIALS:</h3>
+            <h2>SOCIALS:</h2>
             <div className="links">
               <a
                 href="https://www.linkedin.com/in/vladimir-karic/"
@@ -69,7 +69,7 @@ export default function HomePage() {
               >
                 <img
                   src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/linkedin.png"
-                  alt=""
+                  alt="Linkedin logo"
                 />
               </a>
               <a
@@ -79,13 +79,13 @@ export default function HomePage() {
               >
                 <img
                   src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/github.png"
-                  alt=""
+                  alt="Github logo"
                 />
               </a>
               <a href="mailto: vladimirkaric2001@gmail.com">
                 <img
                   src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/gmail.png"
-                  alt=""
+                  alt="Gmail logo"
                 />
               </a>
             </div>
@@ -94,17 +94,17 @@ export default function HomePage() {
         <div className="rightSide">
           <img
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/keyboardMouse.png"
-            alt=""
+            alt=" Keyboard and Mouse"
             className="keyboardMouse"
           />
           <img
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/monitor.png"
-            alt=""
+            alt="Monitor"
             className="monitor"
           />
           <img
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/speaker.png"
-            alt=""
+            alt="Speaker"
             className={`speaker ${speakerOn ? "on" : ""}`}
             onClick={() => {
               setLoadAudio(true);
@@ -171,7 +171,7 @@ export default function HomePage() {
 
           <img
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phoneShadow.png"
-            alt=""
+            alt="Shadow"
             className="phoneShadow"
           />
           {/* <video
@@ -198,7 +198,7 @@ export default function HomePage() {
               }
             }}
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phone.png"
-            alt=""
+            alt="Phone"
             className="phone"
           />
         </div>
@@ -206,7 +206,7 @@ export default function HomePage() {
           <div className="numberWrapper">
             <img
               src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
-              alt=""
+              alt="Cloud"
               className="cloud"
             />
             <div className="text">
@@ -219,7 +219,7 @@ export default function HomePage() {
           <div className="numberWrapper">
             <img
               src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
-              alt=""
+              alt="Cloud"
               className="cloud"
             />
             <div className="text">

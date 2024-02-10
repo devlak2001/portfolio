@@ -22,7 +22,10 @@ const pagination = (
           setCurrentProjectAsset(0);
         }}
       >
-        <img src={"./images/ProjectsPage/numberBkg.png"} alt="" />
+        <img
+          data-img-src={"./images/ProjectsPage/numberBkg.png"}
+          alt="Number Background"
+        />
         <span>{i + 1}</span>
       </div>
     );
@@ -111,14 +114,14 @@ export default function ProjectsPage() {
     <>
       <section className="ProjectsPage">
         <img
-          src={"./images/ProjectsPage/backgroundPiece1.png"}
-          alt=""
+          data-img-src={"./images/ProjectsPage/backgroundPiece1.png"}
+          alt="Background Piece"
           className="backgroundPiece1"
           loading="lazy"
         />
         <img
-          src={"./images/ProjectsPage/backgroundPiece2.png"}
-          alt=""
+          data-img-src={"./images/ProjectsPage/backgroundPiece2.png"}
+          alt="Background Piece"
           className="backgroundPiece2"
           loading="lazy"
         />
@@ -137,8 +140,8 @@ export default function ProjectsPage() {
             >
               <div className="leftSide">
                 <img
-                  src={"./images/ProjectsPage/whiteBrush.png"}
-                  alt=""
+                  data-img-src={"./images/ProjectsPage/whiteBrush.png"}
+                  alt="White Brush stroke"
                   className="brush"
                   loading="lazy"
                 />
@@ -149,22 +152,22 @@ export default function ProjectsPage() {
                     <>
                       <a href={el.associates[0].url}>
                         <img
-                          src={"./images" + el.associates[0].img}
+                          data-img-src={"./images" + el.associates[0].img}
                           className="badge"
-                          alt=""
+                          alt="Badge"
                           title={el.associates[0].url}
                         />
                       </a>
                     </>
                   )}
                   <img
-                    src={
+                    data-img-src={
                       el.type === "dependent"
                         ? "./images/associates/teamBadge.png"
                         : "./images/associates/independentBadge.png"
                     }
                     className="badge"
-                    alt=""
+                    alt="Badge"
                     loading="lazy"
                   />
                 </div>
@@ -192,7 +195,7 @@ export default function ProjectsPage() {
                               : "transform 0.5s ease, opacity 0.35s ease",
                         }}
                         playsInline={true}
-                        src={
+                        data-img-src={
                           index === currentProjectAsset &&
                           projectIndex == currentProject
                             ? "./videos/" + el.url
@@ -222,8 +225,8 @@ export default function ProjectsPage() {
                   }}
                 >
                   <img
-                    src={"./images/ProjectsPage/arrowLeft.png"}
-                    alt=""
+                    data-img-src={"./images/ProjectsPage/arrowLeft.png"}
+                    alt="Left arrow"
                     loading="lazy"
                   />
                 </button>
@@ -238,23 +241,23 @@ export default function ProjectsPage() {
                   }}
                 >
                   <img
-                    src={"./images/ProjectsPage/arrowRight.png"}
-                    alt=""
+                    data-img-src={"./images/ProjectsPage/arrowRight.png"}
+                    alt="Right arrow"
                     loading="lazy"
                   />
                 </button>
                 <div className="number">
                   <img
-                    src={"./images/ProjectsPage/buttonBkg.png"}
-                    alt=""
+                    data-img-src={"./images/ProjectsPage/buttonBkg.png"}
+                    alt="Button background"
                     loading="lazy"
                   />
                   <span>{currentProjectAsset + 1}</span>/
                   <span>{el.videos.length}</span>
                 </div>
                 <img
-                  src={"./images/ProjectsPage/projectGallery.png"}
-                  alt=""
+                  data-img-src={"./images/ProjectsPage/projectGallery.png"}
+                  alt="Project Gallery Text"
                   className="title"
                   loading="lazy"
                 />
@@ -276,8 +279,8 @@ export default function ProjectsPage() {
             }}
           >
             <img
-              src={"./images/ProjectsPage/arrowLeft2.png"}
-              alt=""
+              data-img-src={"./images/ProjectsPage/arrowLeft2.png"}
+              alt="Left arrow"
               loading="lazy"
             />
           </button>
@@ -301,8 +304,8 @@ export default function ProjectsPage() {
             }}
           >
             <img
-              src={"./images/ProjectsPage/arrowRight2.png"}
-              alt=""
+              data-img-src={"./images/ProjectsPage/arrowRight2.png"}
+              alt="Right arrow"
               loading="lazy"
             />
           </button>

@@ -31,7 +31,7 @@ export default function NavBar() {
         <div className="inner">
           <img
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/logo.png"
-            alt=""
+            alt="Logo"
             className="logo"
             onClick={() => {
               document.querySelector("header")!.scrollIntoView({
@@ -56,7 +56,7 @@ export default function NavBar() {
             >
               <img
                 src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
-                alt=""
+                alt="Brush stroke"
                 className="brush"
               />
               <span className="inactive">ABOUT ME</span>
@@ -75,7 +75,7 @@ export default function NavBar() {
             >
               <img
                 src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
-                alt=""
+                alt="Brush stroke"
                 className="brush"
               />
               <span className="inactive">PROJECTS</span>
@@ -94,7 +94,7 @@ export default function NavBar() {
             >
               <img
                 src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
-                alt=""
+                alt="Brush stroke"
                 className="brush"
               />
               <span className="inactive">EXPERIENCE</span>
@@ -125,7 +125,7 @@ export default function NavBar() {
         >
           <img
             src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/hamburger.png"
-            alt=""
+            alt="Hamburger icon"
           />
         </button>
       </nav>
