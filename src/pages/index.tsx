@@ -47,12 +47,11 @@ export const Head: HeadFC = () => {
         rel="icon"
         href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/favicon.png"
       />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta httpEquiv="Permissions-Policy" content="interest-cohort=()" />
       <meta name="theme-color" content="#000000" />
       <meta
         name="description"
-        content="Transcending Solutions, Redefining Boundaries!"
+        content="Vladimir Karić, a passionate software developer and front-end specialist based in Serbia. With a background at the prestigious Faculty of Technical Science, my journey from freelance projects to the cutting-edge team at Rock Paper Reality has shaped me into a developer who blends technical expertise with artistic vision. Explore my portfolio where technology meets artistry, and together, let's push the limits of software development to create extraordinary digital experiences."
       />
       <link
         rel="apple-touch-icon"
@@ -95,6 +94,14 @@ export const Head: HeadFC = () => {
 
       <link
         rel="preload"
+        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Consolas.woff2"
+        as="font"
+        type="font/woff2"
+        crossOrigin="anonymous"
+      />
+
+      <link
+        rel="preload"
         href="./images/AboutMe/backgroundPiece3.png"
         as="image"
       />
@@ -104,20 +111,6 @@ export const Head: HeadFC = () => {
         href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Rustico-Regular.otf"
         as="font"
         type="font/otf"
-        crossOrigin="anonymous"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Consolas.woff2"
-        as="font"
-        type="font/woff2"
-        crossOrigin="anonymous"
-      />
-      <link
-        rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/ConsolasBold.woff2"
-        as="font"
-        type="font/woff2"
         crossOrigin="anonymous"
       />
 

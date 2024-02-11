@@ -65,11 +65,22 @@ export default function NavBar() {
             <div
               className="link"
               onClick={() => {
-                document.querySelector(".ProjectsPage")!.scrollIntoView({
+                window.scrollTo({
+                  top:
+                    (document.querySelector(
+                      ".ProjectsPage .leftSide"
+                    ) as any)!.getBoundingClientRect().top +
+                    window.scrollY -
+                    document.querySelector("nav")!.getBoundingClientRect()
+                      .height *
+                      1.5,
                   behavior: "smooth",
-                  block: "nearest",
-                  inline: "start",
                 });
+                // document.querySelector(".ProjectsPage")!.scrollIntoView({
+                //   behavior: "smooth",
+                //   block: "nearest",
+                //   inline: "start",
+                // });
                 setMobileState("inactive");
               }}
             >
