@@ -201,6 +201,12 @@ export default function ProjectsPage() {
                             ? "./videos/" + el.url
                             : ""
                         }
+                        src={
+                          index === currentProjectAsset &&
+                          projectIndex == currentProject
+                            ? "./videos/" + el.url
+                            : ""
+                        }
                         poster={
                           index === currentProjectAsset &&
                           projectIndex == currentProject

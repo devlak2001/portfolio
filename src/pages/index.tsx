@@ -16,11 +16,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
   useEffect(() => {
     if (homePageLoaded) {
-      Array.from(document.querySelectorAll("main img, main video")).forEach(
-        (img: any) => {
-          img.src = img.dataset.imgSrc;
-        }
-      );
+      Array.from(document.querySelectorAll("main img")).forEach((img: any) => {
+        img.src = img.dataset.imgSrc;
+      });
     }
   }, [homePageLoaded]);
   return (
