@@ -56,7 +56,10 @@ export const Head: HeadFC = () => {
         href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/favicon.png"
       />
 
-      <meta property="og:url" content="" />
+      <meta
+        property="og:url"
+        content="https://devlak2001.github.io/portfolio/"
+      />
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
