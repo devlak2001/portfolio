@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://devlak2001.github.io/portfolio/sitemap.xml
+Host: https://devlak2001.github.io
