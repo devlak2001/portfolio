@@ -4,7 +4,7 @@ import "../styles/aboutMe.scss";
 export default function AboutMe() {
   return (
     <>
-      <section className="AboutMe">
+      <section className="AboutMe" id="about-me">
         <img
           data-img-src={"./images/AboutMe/backgroundPiece1.png"}
           alt="Background Piece"

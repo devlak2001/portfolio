@@ -13,6 +13,7 @@ import "./styles/index.scss";
 
 const IndexPage: React.FC<PageProps> = () => {
   const [homePageLoaded, setHomePageLoaded] = useState(false);
+  const [loaderHidden, setLoaderHidden] = useState(false);
 
   useEffect(() => {
     if (homePageLoaded) {
@@ -21,9 +22,18 @@ const IndexPage: React.FC<PageProps> = () => {
       });
     }
   }, [homePageLoaded]);
+  useEffect(() => {});
   return (
-    <div className="App">
-      <ImageLoader setHomePageLoaded={setHomePageLoaded} />
+    <div
+      className="App"
+      style={{
+        pointerEvents: loaderHidden ? "all" : "none",
+      }}
+    >
+      <ImageLoader
+        setHomePageLoaded={setHomePageLoaded}
+        setLoaderHidden={setLoaderHidden}
+      />
       <NavBar />
       <HomePage />
       <main>
@@ -41,57 +51,36 @@ export const Head: HeadFC = () => {
   return (
     <>
       <meta charSet="utf-8" />
-      <link
-        rel="icon"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/favicon.png"
-      />
+      <link rel="icon" href="./images/favicon.png" />
       <meta httpEquiv="Permissions-Policy" content="interest-cohort=()" />
       <meta name="theme-color" content="#000000" />
       <meta
         name="description"
-        content="Vladimir Karić, a passionate software developer and front-end specialist based in Serbia. With a background at the prestigious Faculty of Technical Science, my journey from freelance projects to the cutting-edge team at Rock Paper Reality has shaped me into a developer who blends technical expertise with artistic vision. Explore my portfolio where technology meets artistry, and together, let's push the limits of software development to create extraordinary digital experiences."
+        content="Software Engineer with the current focus on Front-End Development."
       />
-      <link
-        rel="apple-touch-icon"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/favicon.png"
-      />
+      <link rel="apple-touch-icon" href="./images/favicon.png" />
 
       <meta
         property="og:url"
         content="https://devlak2001.github.io/portfolio/"
       />
       <meta property="og:type" content="website" />
-      <meta
-        property="og:title"
-        content="Vladimir Karić | Software Developer Portfolio"
-      />
+      <meta property="og:title" content="Vladimir Karić | Portfolio" />
       <meta
         property="og:description"
-        content="Vladimir Karić, a passionate software developer and front-end specialist based in Serbia. With a background at the prestigious Faculty of Technical Science, my journey from freelance projects to the cutting-edge team at Rock Paper Reality has shaped me into a developer who blends technical expertise with artistic vision. Explore my portfolio where technology meets artistry, and together, let's push the limits of software development to create extraordinary digital experiences."
+        content="Software Engineer with the current focus on Front-End Development."
       />
-      <meta
-        property="og:image"
-        content="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/shareImage.png"
-      />
+      <meta property="og:image" content="./images/shareImage.png" />
       <meta property="og:image:type" content="image/png" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="Vladimir Karić | Software Developer Portfolio"
-      />
+      <meta name="twitter:title" content="Vladimir Karić | Portfolio" />
       <meta
         name="twitter:description"
-        content="Vladimir Karić, a passionate software developer and front-end specialist based in Serbia. With a background at the prestigious Faculty of Technical Science, my journey from freelance projects to the cutting-edge team at Rock Paper Reality has shaped me into a developer who blends technical expertise with artistic vision. Explore my portfolio where technology meets artistry, and together, let's push the limits of software development to create extraordinary digital experiences."
+        content="Software Engineer with the current focus on Front-End Development."
       />
-      <meta
-        name="twitter:image"
-        content="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/shareImage.png"
-      />
-      <meta
-        name="twitter:image:alt"
-        content="Vladimir Karić | Software Developer Portfolio"
-      />
+      <meta name="twitter:image" content="./images/shareImage.png" />
+      <meta name="twitter:image:alt" content="Vladimir Karić | Portfolio" />
 
       <link
         rel="preload"

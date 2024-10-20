@@ -4,7 +4,7 @@ import "../styles/experiencePage.scss";
 export default function ExperiencePage() {
   return (
     <>
-      <section className="ExperiencePage">
+      <section className="ExperiencePage" id="experience">
         <img
           data-img-src={"./images/ExperiencePage/backgroundPiece1.png"}
           alt="Background Piece"

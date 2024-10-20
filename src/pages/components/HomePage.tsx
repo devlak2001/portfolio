@@ -24,32 +24,32 @@ export default function HomePage() {
   }, [speakerOn]);
   return (
     <>
-      <header>
+      <header id="home-page">
         <img
-          src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece1.png"
+          src="./images/homePage/backgroundPiece1.png"
           alt="Background Piece"
           className="backgroundPiece1"
         />
         <img
-          src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece2.png"
+          src="./images/homePage/backgroundPiece2.png"
           alt="Background Piece"
           className="backgroundPiece2"
         />
         <img
-          src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/backgroundPiece3.png"
+          src="./images/homePage/backgroundPiece3.png"
           alt="Background Piece"
           className="backgroundPiece3"
         />
         <div className="leftSide">
           <img
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/whiteBrush.png"
+            src="./images/homePage/whiteBrush.png"
             alt="White Brush stroke"
             className="brush"
           />
           <h1>
             VLADIMIR KARIC
             <img
-              src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/katana.png"
+              src="./images/homePage/katana.png"
               alt="Katana"
               className="katana"
             />
@@ -67,43 +67,34 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/linkedin.png"
-                  alt="Linkedin logo"
-                />
+                <img src="./images/homePage/linkedin.png" alt="Linkedin logo" />
               </a>
               <a
                 href="https://github.com/devlak2001"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/github.png"
-                  alt="Github logo"
-                />
+                <img src="./images/homePage/github.png" alt="Github logo" />
               </a>
               <a href="mailto: vladimirkaric2001@gmail.com">
-                <img
-                  src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/gmail.png"
-                  alt="Gmail logo"
-                />
+                <img src="./images/homePage/gmail.png" alt="Gmail logo" />
               </a>
             </div>
           </div>
         </div>
         <div className="rightSide">
           <img
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/keyboardMouse.png"
+            src="./images/homePage/keyboardMouse.png"
             alt=" Keyboard and Mouse"
             className="keyboardMouse"
           />
           <img
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/monitor.png"
+            src="./images/homePage/monitor.png"
             alt="Monitor"
             className="monitor"
           />
           <img
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/speaker.png"
+            src="./images/homePage/speaker.png"
             alt="Speaker"
             className={`speaker ${speakerOn ? "on" : ""}`}
             onClick={() => {
@@ -170,7 +161,7 @@ export default function HomePage() {
           </svg>
 
           <img
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phoneShadow.png"
+            src="./images/homePage/phoneShadow.png"
             alt="Shadow"
             className="phoneShadow"
           />
@@ -197,7 +188,7 @@ export default function HomePage() {
                 console.log(err);
               }
             }}
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/phone.png"
+            src="./images/homePage/phone.png"
             alt="Phone"
             className="phone"
           />
@@ -205,7 +196,7 @@ export default function HomePage() {
         <div className="bottomSide">
           <div className="numberWrapper">
             <img
-              src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
+              src="./images/homePage/cloud.png"
               alt="Cloud"
               className="cloud"
             />
@@ -218,7 +209,7 @@ export default function HomePage() {
           </div>
           <div className="numberWrapper">
             <img
-              src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/homePage/cloud.png"
+              src="./images/homePage/cloud.png"
               alt="Cloud"
               className="cloud"
             />

@@ -29,99 +29,60 @@ export default function NavBar() {
     <>
       <nav className={`${stick ? "stick" : ""} ${mobileState}`}>
         <div className="inner">
-          <img
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/logo.png"
-            alt="Logo"
-            className="logo"
+          <a
+            href="#home-page"
             onClick={() => {
-              document.querySelector("header")!.scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "start",
-              });
               setMobileState("inactive");
             }}
-          />
+          >
+            <img src="./images/logo.png" alt="Logo" className="logo" />
+          </a>
           <div className="links">
-            <div
+            <a
+              href="#about-me"
               className="link"
               onClick={() => {
-                document.querySelector(".AboutMe")!.scrollIntoView({
-                  behavior: "smooth",
-                  block: "nearest",
-                  inline: "start",
-                });
                 setMobileState("inactive");
               }}
             >
               <img
-                src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
+                src="./images/navBar/linkBrush.png"
                 alt="Brush stroke"
                 className="brush"
               />
               <span className="inactive">ABOUT ME</span>
               <span className="active">ABOUT ME</span>
-            </div>
-            <div
+            </a>
+            <a
+              href="#projects"
               className="link"
               onClick={() => {
-                window.scrollTo({
-                  top:
-                    (document.querySelector(
-                      ".ProjectsPage .leftSide"
-                    ) as any)!.getBoundingClientRect().top +
-                    window.scrollY -
-                    document.querySelector("nav")!.getBoundingClientRect()
-                      .height *
-                      1.5,
-                  behavior: "smooth",
-                });
-                // document.querySelector(".ProjectsPage")!.scrollIntoView({
-                //   behavior: "smooth",
-                //   block: "nearest",
-                //   inline: "start",
-                // });
                 setMobileState("inactive");
               }}
             >
               <img
-                src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
+                src="./images/navBar/linkBrush.png"
                 alt="Brush stroke"
                 className="brush"
               />
               <span className="inactive">PROJECTS</span>
               <span className="active">PROJECTS</span>
-            </div>
-            <div
+            </a>
+            <a
+              href="#experience"
               className="link"
               onClick={() => {
-                document.querySelector(".ExperiencePage")!.scrollIntoView({
-                  behavior: "smooth",
-                  block: "nearest",
-                  inline: "start",
-                });
                 setMobileState("inactive");
               }}
             >
               <img
-                src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/linkBrush.png"
+                src="./images/navBar/linkBrush.png"
                 alt="Brush stroke"
                 className="brush"
               />
               <span className="inactive">EXPERIENCE</span>
               <span className="active">EXPERIENCE</span>
-            </div>
-            {/* <div className="link">
-              <img
-                src={
-                   "./images/NavBar/linkBrush.png"
-                }
-                alt=""
-                className="brush"
-              />
-              <span className="inactive">CONTACT</span>
-              <span className="active">CONTACT</span>
-            </div> */}
+            </a>
           </div>
         </div>
         <button
@@ -134,14 +95,11 @@ export default function NavBar() {
             }
           }}
         >
-          <img
-            src="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/images/navBar/hamburger.png"
-            alt="Hamburger icon"
-          />
+          <img src="./images/navBar/hamburger.png" alt="Hamburger icon" />
         </button>
       </nav>
       <a
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/Vladimir_Karic_CV.pdf"
+        href="./Vladimir_Karic_CV.pdf"
         target="_blank"
         rel="noreferrer"
         className="viewResume"

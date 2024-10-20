@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-const ImageLoader = ({ setHomePageLoaded }: any) => {
+const ImageLoader = ({ setHomePageLoaded, setLoaderHidden }: any) => {
   const [allLoaded, setAllLoaded] = useState<boolean>(false);
   const [minTimePassed, setMinTimePassed] = useState<boolean>(false);
   const [hideLoader, setHideLoader] = useState<boolean>(false);
@@ -48,6 +48,7 @@ const ImageLoader = ({ setHomePageLoaded }: any) => {
       setHideLoader(true);
       setTimeout(() => {
         setRemoveLoader(true);
+        setLoaderHidden(true);
       }, 1000);
     }
   }, [minTimePassed, allLoaded]);

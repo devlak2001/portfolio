@@ -112,7 +112,7 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <section className="ProjectsPage">
+      <section className="ProjectsPage" id="projects">
         <img
           data-img-src={"./images/ProjectsPage/backgroundPiece1.png"}
           alt="Background Piece"
