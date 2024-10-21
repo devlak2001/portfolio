@@ -33,7 +33,7 @@ const pagination = (
   return numbers;
 };
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ homePageLoaded }: any) {
   const [currentProject, setCurrentProject] = useState<number>(0);
   const [currentProjectAsset, setCurrentProjectAsset] = useState<number>(0);
   // const [jsonData, setJsonData] = useState(json);
@@ -175,46 +175,47 @@ export default function ProjectsPage() {
               <div className={`presentation`}>
                 <div className="contentWrapper">
                   <div className={`slide active`}>
-                    {el.videos.map((el, index) => (
-                      <video
-                        key={index}
-                        muted={true}
-                        controls={true}
-                        style={{
-                          opacity: index === currentProjectAsset ? "1" : "0",
-                          transform:
-                            index === currentProjectAsset
-                              ? "scale(100%)"
-                              : "scale(0)",
-                          pointerEvents:
-                            index === currentProjectAsset ? "all" : "none",
-                          zIndex: index === currentProjectAsset ? "1" : "-1",
-                          transition:
-                            index === currentProjectAsset
-                              ? "transform 0.5s ease"
-                              : "transform 0.5s ease, opacity 0.35s ease",
-                        }}
-                        playsInline={true}
-                        data-img-src={
-                          index === currentProjectAsset &&
-                          projectIndex == currentProject
-                            ? "./videos/" + el.url
-                            : ""
-                        }
-                        src={
-                          index === currentProjectAsset &&
-                          projectIndex == currentProject
-                            ? "./videos/" + el.url
-                            : ""
-                        }
-                        poster={
-                          index === currentProjectAsset &&
-                          projectIndex == currentProject
-                            ? "./videos/" + el.poster
-                            : ""
-                        }
-                      ></video>
-                    ))}
+                    {homePageLoaded &&
+                      el.videos.map((el, index) => (
+                        <video
+                          key={index}
+                          muted={true}
+                          controls={true}
+                          style={{
+                            opacity: index === currentProjectAsset ? "1" : "0",
+                            transform:
+                              index === currentProjectAsset
+                                ? "scale(100%)"
+                                : "scale(0)",
+                            pointerEvents:
+                              index === currentProjectAsset ? "all" : "none",
+                            zIndex: index === currentProjectAsset ? "1" : "-1",
+                            transition:
+                              index === currentProjectAsset
+                                ? "transform 0.5s ease"
+                                : "transform 0.5s ease, opacity 0.35s ease",
+                          }}
+                          playsInline={true}
+                          data-img-src={
+                            index === currentProjectAsset &&
+                            projectIndex == currentProject
+                              ? "./videos/" + el.url
+                              : ""
+                          }
+                          src={
+                            index === currentProjectAsset &&
+                            projectIndex == currentProject
+                              ? "./videos/" + el.url
+                              : ""
+                          }
+                          poster={
+                            index === currentProjectAsset &&
+                            projectIndex == currentProject
+                              ? "./videos/" + el.poster
+                              : ""
+                          }
+                        ></video>
+                      ))}
                     {/* <div className="loadingOverlay" style={{ opacity: "0" }}>
                       <span className="loader"></span>
                     </div> */}

@@ -38,7 +38,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <HomePage />
       <main>
         <AboutMe />
-        <ProjectsPage />
+        <ProjectsPage homePageLoaded={homePageLoaded} />
         <ExperiencePage />
       </main>
     </div>
@@ -84,7 +84,7 @@ export const Head: HeadFC = () => {
 
       <link
         rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Consolas.woff2"
+        href="./fonts/Consolas.woff2"
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
@@ -98,9 +98,9 @@ export const Head: HeadFC = () => {
 
       <link
         rel="preload"
-        href="https://devlak2001.s3.eu-central-1.amazonaws.com/portfolio/fonts/Rustico-Regular.otf"
+        href="./fonts/Rustico-Regular.woff2"
         as="font"
-        type="font/otf"
+        type="font/woff2"
         crossOrigin="anonymous"
       />
 
