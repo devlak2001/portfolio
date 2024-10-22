@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "../styles/homePage.scss";
 import { useState } from "react";
 
+import { GithubIcon, LinkedinIcon, GmailIcon, PhoneShadow } from "../svg/icons";
+
 let bkgMusic: any;
 export default function HomePage() {
   const [speakerOn, setSpeakerOn] = useState(false);
@@ -67,17 +69,17 @@ export default function HomePage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="./images/homePage/linkedin.png" alt="Linkedin logo" />
+                <LinkedinIcon />
               </a>
               <a
                 href="https://github.com/devlak2001"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="./images/homePage/github.png" alt="Github logo" />
+                <GithubIcon />
               </a>
               <a href="mailto: vladimirkaric2001@gmail.com">
-                <img src="./images/homePage/gmail.png" alt="Gmail logo" />
+                <GmailIcon />
               </a>
             </div>
           </div>
@@ -160,11 +162,8 @@ export default function HomePage() {
             </defs>
           </svg>
 
-          <img
-            src="./images/homePage/phoneShadow.png"
-            alt="Shadow"
-            className="phoneShadow"
-          />
+          <PhoneShadow className="phoneShadow" />
+
           {/* <video
             loop={true}
             ref={phoneVideo}

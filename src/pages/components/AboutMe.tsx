@@ -86,7 +86,7 @@ export default function AboutMe() {
           />
           <h2>ABOUT ME</h2>
           <p>
-            Hello, I'm Vladimir Karić, software developer currently pursuing my
+            Hello, I'm Vladimir Karic, software developer currently pursuing my
             studies at the prestigious Faculty of Technical Science in Serbia.
             My passion for software development blossomed during my high school
             years, and ever since, I have been enamored by the incredible

@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .App {
-  background-image: url("../../../static/images/noise.webp");
+  background-image: url("../../../static/images/noise.png");
   background-position: center;
   background-repeat: repeat;
   background-size: 300px auto;
@@ -56,7 +56,8 @@ button {
   appearance: none; // Just in case we missed anything.
 }
 
-img {
+img,
+svg {
   display: block;
   user-select: none;
   pointer-events: none;

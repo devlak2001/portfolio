@@ -17,9 +17,11 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "gatsby": "^5.13.2",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-plugin-svgr": "^3.0.0-beta.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.70.0"
