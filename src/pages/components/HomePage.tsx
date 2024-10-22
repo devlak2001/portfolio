@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/homePage.scss";
 import { useState } from "react";
 
-import { GithubIcon, LinkedinIcon, GmailIcon, PhoneShadow } from "../svg/icons";
+import GithubIcon, { LinkedinIcon, GmailIcon, PhoneShadow } from "../svg/icons";
 
 let bkgMusic: any;
 export default function HomePage() {
